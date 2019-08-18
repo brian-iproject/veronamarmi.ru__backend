@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Стандартный шаблон</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link href="template_styles.css" rel="stylesheet" type="text/css">
+	
+	<link href="libs/normalize/normalize.css" rel="stylesheet" type="text/css">
+	<link href="libs/slick/slick.css" rel="stylesheet" type="text/css">
+
+	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="script.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	
+	<script src="blocks/main-menu/script.js"></script>
+	<script src="blocks/main-slider/script.js"></script>
+	<script src="blocks/portfolio-line/script.js"></script>
+	
+	<link href="blocks/header-search/style.css" rel="stylesheet" type="text/css">
+	<link href="blocks/main-menu/style.css" rel="stylesheet" type="text/css">
+	<link href="blocks/footer-menu/style.css" rel="stylesheet" type="text/css">
+	<link href="blocks/main-slider/style.css" rel="stylesheet" type="text/css">
+	<link href="blocks/site-sections/style.css" rel="stylesheet" type="text/css">
+	<link href="blocks/portfolio-line/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="page-wrapper">
+	<div class="topline">
+		<div class="topline__inner container--fluid">
+			<div class="topline__address1"><svg class="svg-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-map-point"></use></svg> г. Москва, ул. Маросейка д. 11, офис 3</div>
+			<div class="topline__address2"><svg class="svg-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-map-point"></use></svg> Московская область, ГО Истра, село Павловская Слобода</div>
+			<div class="topline__time-work"><svg class="svg-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-timer"></use></svg> Часы работы: с 10:00 до 22:00</div>
+		</div>
+	</div>
+	<header class="page-header container--fluid">
+		<button class="page-header__button-mobile-search" data-mobile-button="search" data-mobile-class="page-header__search--mobile-active">
+			<svg class="svg-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-search"></use></svg>
+		</button>
+		<div class="page-header__logo">
+			<img src="images/logo.png" alt="">
+		</div>
+		<button class="page-header__button-mobile-phone" data-mobile-button="contacts" data-mobile-class="page-header__contacts--mobile-active">
+			<svg class="svg-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-phone"></use></svg>
+		</button>
+		<div class="page-header__slogan">Эксклюзивное качество для вашего комфорта</div>
+		<div class="page-header__search" data-mobile-block="search">
+			<button class="page-header__close-mobile" data-mobile-button="search" data-mobile-class="page-header__search--mobile-active"></button>
+			<div class="header-search">
+				<form action="" class="header-search__form">
+					<input type="text" placeholder="Поиск по сайту" class="header-search__field">
+					<button class="header-search__button"><svg class="svg-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-search"></use></svg></button>
+				</form>
+			</div>
+		</div>
+		<div class="page-header__callback">
+			<span class="site-button site-button--big">Обратный звонок</span>
+		</div>
+		<div class="page-header__contacts" data-mobile-block="contacts">
+			<button class="page-header__close-mobile" data-mobile-button="contacts" data-mobile-class="page-header__contacts--mobile-active"></button>
+			<div class="page-header__phone"><a href="tel:+74957956760">+7 (495) 795-67-60</a></div>
+			<div class="page-header__phone"><a href="tel:+79268088688">+7 (926) 808-86-88</a></div>
+			<div class="psge-header__email"><svg class="svg-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-email"></use></svg> <a href="mailto:info@veronamarmi.ru">info@veronamarmi.ru</a></div>
+		</div>
+	</header>
+	<nav class="page-nav">
+		<div class="main-menu-burger">
+			Меню
+			<button class="main-menu-burger__button js-main-menu-burger__button">
+				<span></span>
+			</button>
+		</div>
+		<div class="main-menu">
+			<button class="main-menu__close-mobile js-main-menu-burger__button"></button>
+			<div class="container--fluid">
+				<ul class="main-menu__list main-menu__list--lvl1">
+					<li class="main-menu__item main-menu__item--lvl1 main-menu__item--parent">
+						<a href="#" class="main-menu__link main-menu__link--lvl1">О компании</a>
+						<button class="main-menu__dropdown js-main-menu__dropdown"><span></span></button>
+						<div class="main-menu__list-wrapper">
+							<div class="container--fluid">
+								<ul class="main-menu__list main-menu__list--lvl2">
+									<li class="main-menu__item main-menu__item--lvl2"><a class="main-menu__link main-menu__link--lvl2" href="#">Порядок проведения работ</a></li>
+									<li class="main-menu__item-sep main-menu__item-sep--lvl2"></li>
+									<li class="main-menu__item main-menu__item--lvl2"><a class="main-menu__link main-menu__link--lvl2" href="#">Отзывы</a></li>
+									<li class="main-menu__item-sep main-menu__item-sep--lvl2"></li>
+									<li class="main-menu__item main-menu__item--lvl2"><a class="main-menu__link main-menu__link--lvl2" href="#">Гарантии</a></li>
+									<li class="main-menu__item-sep main-menu__item-sep--lvl2"></li>
+									<li class="main-menu__item main-menu__item--lvl2"><a class="main-menu__link main-menu__link--lvl2" href="#">Вопрос-ответ</a></li>
+									<li class="main-menu__item-sep main-menu__item-sep--lvl2"></li>
+									<li class="main-menu__item main-menu__item--lvl2"><a class="main-menu__link main-menu__link--lvl2" href="#">Портфолио</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="main-menu__item-sep main-menu__item-sep--lvl1"></li>
+					<li class="main-menu__item main-menu__item--lvl1 main-menu__item--parent">
+						<a href="#" class="main-menu__link main-menu__link--lvl1">Изделия</a>
+						<button class="main-menu__dropdown js-main-menu__dropdown"><span></span></button>
+						<div class="main-menu__list-wrapper">
+							<div class="container--fluid">
+								<ul class="main-menu__list main-menu__list--lvl2">
+									<li class="main-menu__item main-menu__item--lvl2"><a class="main-menu__link main-menu__link--lvl2" href="#">Порядок проведения работ</a></li>
+									<li class="main-menu__item-sep main-menu__item-sep--lvl2"></li>
+									<li class="main-menu__item main-menu__item--lvl2"><a class="main-menu__link main-menu__link--lvl2" href="#">Отзывы</a></li>
+									<li class="main-menu__item-sep main-menu__item-sep--lvl2"></li>
+									<li class="main-menu__item main-menu__item--lvl2"><a class="main-menu__link main-menu__link--lvl2" href="#">Гарантии</a></li>
+									<li class="main-menu__item-sep main-menu__item-sep--lvl2"></li>
+									<li class="main-menu__item main-menu__item--lvl2"><a class="main-menu__link main-menu__link--lvl2" href="#">Вопрос-ответ</a></li>
+									<li class="main-menu__item-sep main-menu__item-sep--lvl2"></li>
+									<li class="main-menu__item main-menu__item--lvl2"><a class="main-menu__link main-menu__link--lvl2" href="#">Портфолио</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="main-menu__item-sep main-menu__item-sep--lvl1"></li>
+					<li class="main-menu__item main-menu__item--lvl1 main-menu__item--parent"><a href="#" class="main-menu__link main-menu__link--lvl1">Камни</a></li>
+					<li class="main-menu__item-sep main-menu__item-sep--lvl1"></li>
+					<li class="main-menu__item main-menu__item--lvl1 main-menu__item--parent"><a href="#" class="main-menu__link main-menu__link--lvl1">Услуги</a></li>
+					<li class="main-menu__item-sep main-menu__item-sep--lvl1"></li>
+					<li class="main-menu__item main-menu__item--lvl1"><a href="#" class="main-menu__link main-menu__link--lvl1">Доставка</a></li>
+					<li class="main-menu__item-sep main-menu__item-sep--lvl1"></li>
+					<li class="main-menu__item main-menu__item--lvl1"><a href="#" class="main-menu__link main-menu__link--lvl1">Контакты</a></li>
+					<li class="main-menu__item-sep main-menu__item-sep--lvl1"></li>
+					<li class="main-menu__item main-menu__item--lvl1"><a href="#" class="main-menu__link main-menu__link--lvl1">Калькулятор</a></li>
+					<li class="main-menu__item-sep main-menu__item-sep--lvl1"></li>
+					<li class="main-menu__item main-menu__item--lvl1"><a href="#" class="main-menu__link main-menu__link--lvl1">Прайс-лист</a></li>
+					<li class="main-menu__item-sep main-menu__item-sep--lvl1"></li>
+					<li class="main-menu__item main-menu__item--lvl1"><a href="#" class="main-menu__link main-menu__link--lvl1">Акции</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="main-slider js-main-slider">
+		<div class="main-slider__item" style="background-image: url(blocks/main-slider/images/slide1.jpg)">
+			<div class="main-slider__text">
+				<span class="main-slider__pre-name">Изделия из</span>
+				<span class="main-slider__name">натурального камня</span>
+				<span class="main-slider__text-sep"></span>
+				<span class="main-slider__desc">Наша компания оказывает услуги по обработке натурального и искусственного камня. Обладает собственным производственным цехом и современным оборудованием.</span>
+			</div>
+		</div>
+		<div class="main-slider__item" style="background-image: url(blocks/main-slider/images/slide2.jpg)">
+			<div class="main-slider__text">
+				<span class="main-slider__pre-name">Изделия из</span>
+				<span class="main-slider__name">натурального камня</span>
+				<span class="main-slider__text-sep"></span>
+				<span class="main-slider__desc">Наша компания оказывает услуги по обработке натурального и искусственного камня. Обладает собственным производственным цехом и современным оборудованием.</span>
+			</div>
+		</div>
+		<div class="main-slider__item" style="background-image: url(blocks/main-slider/images/slide3.jpg)">
+			<div class="main-slider__text">
+				<span class="main-slider__pre-name">Изделия из</span>
+				<span class="main-slider__name">натурального камня</span>
+				<span class="main-slider__text-sep"></span>
+				<span class="main-slider__desc">Наша компания оказывает услуги по обработке натурального и искусственного камня. Обладает собственным производственным цехом и современным оборудованием.</span>
+			</div>
+		</div>
+		<div class="main-slider__item" style="background-image: url(blocks/main-slider/images/slide4.jpg)">
+			<div class="main-slider__text">
+				<span class="main-slider__pre-name">Изделия из</span>
+				<span class="main-slider__name">натурального камня</span>
+				<span class="main-slider__text-sep"></span>
+				<span class="main-slider__desc">Наша компания оказывает услуги по обработке натурального и искусственного камня. Обладает собственным производственным цехом и современным оборудованием.</span>
+			</div>
+		</div>
+	</div>
+	<main class="page-content">
+		
+		<section class="page-content__section">
+			<div class="container--fluid">
+				<div class="site-sections">
+					<div class="site-sections__item">
+						<a href="#" class="site-sections__link">
+							<span class="site-sections__image"><img src="blocks/site-sections/images/img1.jpg" alt=""></span>
+							Услуги
+						</a>
+					</div>
+					<div class="site-sections__item">
+						<a href="#" class="site-sections__link">
+							<span class="site-sections__image"><img src="blocks/site-sections/images/img2.jpg" alt=""></span>
+							Каталог
+						</a>
+					</div>
+					<div class="site-sections__item">
+						<a href="#" class="site-sections__link">
+							<span class="site-sections__image"><img src="blocks/site-sections/images/img3.jpg" alt=""></span>
+							Галерея
+						</a>
+					</div>
+					<div class="site-sections__item">
+						<a href="#" class="site-sections__link">
+							<span class="site-sections__image"><img src="blocks/site-sections/images/img4.jpg" alt=""></span>
+							Калькулятор
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<div class="hr"></div>
+		
+		<section class="page-content__section">
+			<div class="container--fluid">
+				<h1 class="h2">Обработка натурального камня</h1>
+				<p class="important-text">Обработка натурального камня позволяет придать материалу необходимую фактуру и размер. Существует много способов воздействия на поверхность. Для этого используется высокоточное оборудование, которое не наносит камню вреда, при этом эффективно справляется с задачей. Фактурная механическая обработка позволяет добиться оригинального внешнего вида материала, а также заданных габаритов.</p>
+			</div>
+		</section>
+		
+		<section class="page-content__section">
+			<div class="portfolio-line">
+				<div class="portfolio-line__inner js-portfolio-line">
+					<div class="portfolio-line__item">
+						<a href="#" class="portfolio-line__link">
+							<img src="blocks/portfolio-line/images/img1.jpg" alt="" class="portfolio-line__image">
+							<span class="portfolio-line__caption">
+								<span class="portfolio-line__title">Столешница из гранита Матрикс антик</span>
+								<span class="portfolio-line__place">(Азарово южное)</span>
+							</span>
+						</a>
+					</div>
+					<div class="portfolio-line__item">
+						<a href="#" class="portfolio-line__link">
+							<img src="blocks/portfolio-line/images/img2.jpg" alt="" class="portfolio-line__image">
+							<span class="portfolio-line__caption">
+								<span class="portfolio-line__title">Столешница из гранита Матрикс антик</span>
+								<span class="portfolio-line__place">(Азарово южное)</span>
+							</span>
+						</a>
+					</div>
+					<div class="portfolio-line__item">
+						<a href="#" class="portfolio-line__link">
+							<img src="blocks/portfolio-line/images/img3.jpg" alt="" class="portfolio-line__image">
+							<span class="portfolio-line__caption">
+								<span class="portfolio-line__title">Столешница из гранита Матрикс антик</span>
+								<span class="portfolio-line__place">(Азарово южное)</span>
+							</span>
+						</a>
+					</div>
+					<div class="portfolio-line__item">
+						<a href="#" class="portfolio-line__link">
+							<img src="blocks/portfolio-line/images/img4.jpg" alt="" class="portfolio-line__image">
+							<span class="portfolio-line__caption">
+								<span class="portfolio-line__title">Столешница из гранита Матрикс антик</span>
+								<span class="portfolio-line__place">(Азарово южное)</span>
+							</span>
+						</a>
+					</div>
+					<div class="portfolio-line__item">
+						<a href="#" class="portfolio-line__link">
+							<img src="blocks/portfolio-line/images/img5.jpg" alt="" class="portfolio-line__image">
+							<span class="portfolio-line__caption">
+								<span class="portfolio-line__title">Столешница из гранита Матрикс антик</span>
+								<span class="portfolio-line__place">(Азарово южное)</span>
+							</span>
+						</a>
+					</div>
+					<div class="portfolio-line__item">
+						<a href="#" class="portfolio-line__link">
+							<img src="blocks/portfolio-line/images/img6.jpg" alt="" class="portfolio-line__image">
+							<span class="portfolio-line__caption">
+								<span class="portfolio-line__title">Столешница из гранита Матрикс антик</span>
+								<span class="portfolio-line__place">(Азарово южное)</span>
+							</span>
+						</a>
+					</div>
+					<div class="portfolio-line__item">
+						<a href="#" class="portfolio-line__link">
+							<img src="blocks/portfolio-line/images/img1.jpg" alt="" class="portfolio-line__image">
+							<span class="portfolio-line__caption">
+								<span class="portfolio-line__title">Столешница из гранита Матрикс антик</span>
+								<span class="portfolio-line__place">(Азарово южное)</span>
+							</span>
+						</a>
+					</div>
+					<div class="portfolio-line__item">
+						<a href="#" class="portfolio-line__link">
+							<img src="blocks/portfolio-line/images/img2.jpg" alt="" class="portfolio-line__image">
+							<span class="portfolio-line__caption">
+								<span class="portfolio-line__title">Столешница из гранита Матрикс антик</span>
+								<span class="portfolio-line__place">(Азарово южное)</span>
+							</span>
+						</a>
+					</div>
+					<div class="portfolio-line__item">
+						<a href="#" class="portfolio-line__link">
+							<img src="blocks/portfolio-line/images/img3.jpg" alt="" class="portfolio-line__image">
+							<span class="portfolio-line__caption">
+								<span class="portfolio-line__title">Столешница из гранита Матрикс антик</span>
+								<span class="portfolio-line__place">(Азарово южное)</span>
+							</span>
+						</a>
+					</div>
+					<div class="portfolio-line__item">
+						<a href="#" class="portfolio-line__link">
+							<img src="blocks/portfolio-line/images/img4.jpg" alt="" class="portfolio-line__image">
+							<span class="portfolio-line__caption">
+								<span class="portfolio-line__title">Столешница из гранита Матрикс антик</span>
+								<span class="portfolio-line__place">(Азарово южное)</span>
+							</span>
+						</a>
+					</div>
+					<div class="portfolio-line__item">
+						<a href="#" class="portfolio-line__link">
+							<img src="blocks/portfolio-line/images/img5.jpg" alt="" class="portfolio-line__image">
+							<span class="portfolio-line__caption">
+								<span class="portfolio-line__title">Столешница из гранита Матрикс антик</span>
+								<span class="portfolio-line__place">(Азарово южное)</span>
+							</span>
+						</a>
+					</div>
+					<div class="portfolio-line__item">
+						<a href="#" class="portfolio-line__link">
+							<img src="blocks/portfolio-line/images/img6.jpg" alt="" class="portfolio-line__image">
+							<span class="portfolio-line__caption">
+								<span class="portfolio-line__title">Столешница из гранита Матрикс антик</span>
+								<span class="portfolio-line__place">(Азарово южное)</span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="portfolio-line__more-work">
+					<a href="#" class="site-button">Посмотреть все работы</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="page-footer">
+		<div class="page-footer__inner container--fluid">
+			<div class="page-footer__company">
+				<div class="page-footer__logo">
+					<img src="images/logo-bottom.png" alt="">
+				</div>
+				<div class="page-footer__slogan">
+					Эксклюзивное качество<br>для вашего комфорта
+				</div>
+			</div>
+			<div class="page-footer__footer-menu">
+				<div class="page-footer__footer-menu-column">
+					<div class="footer-menu">
+						<div class="footer-menu__heading">Изделия</div>
+						<ul class="footer-menu__list">
+							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Столешницы</a></li>
+							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Подоконники</a></li>
+							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Ступени</a></li>
+							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Камины</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="page-footer__footer-menu-column">
+					<div class="footer-menu">
+						<div class="footer-menu__heading">Камни</div>
+						<ul class="footer-menu__list">
+							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Мрамор</a></li>
+							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Гранит</a></li>
+							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Оникс</a></li>
+							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Травертин</a></li>
+							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Сланец</a></li>
+							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Агломерат</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="page-footer__footer-menu-column">
+					<div class="footer-menu">
+						<div class="footer-menu__heading">О компании</div>
+						<ul class="footer-menu__list">
+							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакты</a>
+							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Доставка</a>
+							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Отзывы</a>
+							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Гарантии</a>
+							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Вопрос-ответ</a>
+							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Портфолио</a>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="page-footer__contacts">
+				<div class="page-footer__phone-email">
+					<div class="page-footer__phone"><a href="tel:+74957956760">+7 (495) 795-67-60</a></div>
+					<div class="page-footer__phone"><a href="tel:+79268088688">+7 (926) 808-86-88</a></div>
+					<div class="psge-footer__email"><svg class="svg-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-email"></use></svg> <a href="mailto:info@veronamarmi.ru">info@veronamarmi.ru</a></div>
+				</div>
+				<div class="page-footer__callback">
+					<span class="site-button site-button--big site-button--white">Обратный звонок</span>
+				</div>
+				<div class="page-footer__price">
+					<svg class="svg-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-excel"></use></svg> <a href="#">Скачать прайс-лист</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="bottomline">
+		<div class="bottomline__inner container--fluid">
+			<div class="bottomline__address1"><svg class="svg-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-map-point"></use></svg> г. Москва, ул. Маросейка д. 11, офис 3</div>
+			<div class="bottomline__address2"><svg class="svg-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-map-point"></use></svg> Московская область, ГО Истра, село Павловская Слобода</div>
+			<div class="bottomline__time-work"><svg class="svg-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-timer"></use></svg> Часы работы: с 10:00 до 22:00</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

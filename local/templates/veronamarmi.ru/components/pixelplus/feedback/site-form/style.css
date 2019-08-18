@@ -1,0 +1,103 @@
+.site-form-popup .fancybox-content {
+	background: #efe5dd;
+	overflow: visible;
+	padding: 30px;
+}
+
+	.site-form-popup .fancybox-close-small {
+		color: #64452c !important;
+		height: 30px !important;
+		padding: 4px !important;
+		right: 0 !important;
+		top: 0 !important;
+		width: 30px !important;
+	}
+	
+		.site-form-popup .site-form__inner {
+			border: 1px solid #d8cabf;
+			padding: 20px;
+		}
+
+.site-form {
+}
+
+	.site-form__inner {
+	}
+
+		.site-form__item {
+			margin-bottom: 14px;
+		}
+		
+			.site-form__item-name {
+				display: block;
+				margin-bottom: 4px;
+			}
+			
+			.site-form__item--privacy-policy {
+				font-size: 12px;
+			}
+			
+				.site-form__star-required {
+					color: #ff0000;
+				}
+		
+			.site-form__field-text,
+			.site-form__field-email,
+			.site-form__field-textarea {
+				border: 1px solid #d8cabf;
+				font-family: inherit;
+				padding: 10px;
+				width: 100%;
+			}
+			
+			.site-form__field-textarea {
+				min-height: 150px;
+			}
+
+@media (min-width: 768px) {
+	.site-form--two-column {
+		max-width: 767px;
+	}
+	
+		.site-form--two-column .site-form__inner {
+			display: grid;
+			grid-column-gap: 15px;
+			grid-row-gap: 15px;
+			grid-template-areas: "form-name form-message" "form-phone form-message" "form-email form-message" "form-button .";
+			grid-template-columns:50%;
+			grid-template-rows: auto;
+		}
+		
+		.site-form--two-column .site-form__item {
+			margin-bottom: 0;
+		}
+		
+			.site-form--two-column .site-form__item--name {
+				grid-area: form-name;
+			}
+			
+			.site-form--two-column .site-form__item--phone {
+				grid-area: form-phone;
+			}
+
+			.site-form--two-column .site-form__item--phone {
+				grid-area: form-phone;
+			}
+			
+			.site-form--two-column .site-form__item--email {
+				grid-area: form-email;
+			}
+			
+			.site-form--two-column .site-form__item--message {
+				grid-area: form-message;
+			}
+
+			.site-form--two-column .site-form__item--button {
+				grid-area: form-button;
+			}
+	
+				.site-form--two-column .site-form__field-textarea {
+					height: 100%;
+					min-height: auto;
+				}
+}

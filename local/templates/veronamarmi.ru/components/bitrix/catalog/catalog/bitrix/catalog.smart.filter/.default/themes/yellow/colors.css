@@ -1,0 +1,122 @@
+.bx-filter.bx-yellow .bx-filter-section {
+	background: #efe5dd;
+}
+/*
+* INPUTS
+*
+*/
+.bx-filter.bx-yellow .bx-filter-input-container input:focus {
+	border-color: #ee9200;
+}
+.bx-retina .bx-filter.bx-yellow .bx-filter-input-container input:focus {
+	-webkit-border-image: url(images/active.png) 2 repeat;
+	-moz-border-image: url(images/active.png) 2 repeat;
+	-o-border-image: url(images/active.png) 2 repeat;
+	border-image: url(images/active.png) 2 repeat;
+}
+/*
+*Track
+*
+*/
+.bx-filter.bx-yellow .bx-ui-slider-track{background: #e7e7e7;}
+.bx-filter.bx-yellow .bx-ui-slider-pricebar-vd{background: #c9c9c9;}
+.bx-filter.bx-yellow .bx-ui-slider-pricebar-vn{background: #fff;}
+.bx-filter.bx-yellow .bx-ui-slider-pricebar-v {background: #8b6445;}
+
+.bx-filter.bx-yellow .bx-ui-slider-handle.left {
+	background-color: #64452c;
+}
+.bx-filter.bx-yellow .bx-ui-slider-handle.right {
+	background-color: #64452c;
+}
+/*
+*	Select
+*
+*/
+.bx-filter.bx-yellow .bx-filter-select-container.bx-active,
+.bx-filter.bx-yellow .bx-filter-select-container:focus {
+	border-color: #ee9200;
+}
+.bx-retina .bx-filter.bx-yellow .bx-filter-select-container.bx-active,
+.bx-retina .bx-filter.bx-yellow .bx-filter-select-container:focus {
+	-webkit-border-image: url(images/active.png) 2 repeat;
+	-moz-border-image: url(images/active.png) 2 repeat;
+	-o-border-image: url(images/active.png) 2 repeat;
+	border-image: url(images/active.png) 2 repeat;
+}
+/*
+*	Select popup
+*
+*/
+/*
+* TAGS
+*
+*/
+.bx-filter.bx-yellow .bx-filter-tag {
+	border-top: 1px solid #ffdda8;
+	border-bottom: 1px solid #ffdda8;
+}
+.bx-filter.bx-yellow .bx-tag-link {
+	color: #ee9200;
+}
+/*
+*	LABEL
+*
+*/
+/*
+*	Checkbox / Radio 
+*
+*/
+/*
+* 	BTN 
+*
+*/
+.bx-filter.bx-yellow .bx-filter-param-label.bx-active .bx-filter-param-btn,
+.bx-filter.bx-yellow .bx-filter-param-btn:hover,
+.bx-filter.bx-yellow .bx-filter-param-btn:active,
+.bx-filter.bx-yellow .bx-filter-param-btn:focus {
+	border-color: #ee9200;
+}
+.bx-retina .bx-filter.bx-yellow .bx-filter-param-label.bx-active .bx-filter-param-btn,
+.bx-retina .bx-filter.bx-yellow .bx-filter-param-btn:hover,
+.bx-retina .bx-filter.bx-yellow .bx-filter-param-btn:active,
+.bx-retina .bx-filter.bx-yellow .bx-filter-select-container:focus {
+	-webkit-border-image: url(images/active.png) 2 repeat;
+	-moz-border-image: url(images/active.png) 2 repeat;
+	-o-border-image: url(images/active.png) 2 repeat;
+	border-image: url(images/active.png) 2 repeat;
+}
+/*
+* BTN P/M
+*
+*/
+/*
+*	icon
+*
+*/
+/*
+* 	BIZ
+*
+*/
+/*
+*	BTN result and reset 
+*
+*/
+.bx-filter.bx-yellow .btn-themes {
+	background-color: #ee9200;
+	border-color: #ee9200;
+	color: #FFF
+}
+.bx-filter.bx-yellow .btn-themes.bx-active,
+.bx-filter.bx-yellow .btn-themes.focus,
+.bx-filter.bx-yellow .btn-themes:active,
+.bx-filter.bx-yellow .btn-themes:focus,
+.bx-filter.bx-yellow .btn-themes:hover{
+	background-color: #f0bf72;
+	border-color: #f0bf72;
+	color: #FFF
+}
+/*
+* 	Result Popup
+*
+*/

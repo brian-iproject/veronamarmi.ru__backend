@@ -1,0 +1,23 @@
+.social-networks {
+}
+
+	.social-networks__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+	}
+	
+		.social-networks__item {
+		
+		}
+		
+			.social-networks__item + .social-networks__item {
+				margin-left: 6px;
+			}
+			
+			.social-networks__icon {
+				fill: #fff;
+				width: 20px;
+				height: 20px;
+			}

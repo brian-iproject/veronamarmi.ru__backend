@@ -1,0 +1,1 @@
+<svg class="svg-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-excel"></use></svg> <a href="/upload/pricelist.xlsx">Скачать прайс-лист</a>

@@ -1,0 +1,49 @@
+.portfolio-list {
+}
+
+	.portfolio-list__item {
+	
+	}
+	
+		.portfolio-list__item + .portfolio-list__item {
+			margin-top: 30px;
+		}
+		
+		.portfolio-list__name {
+			text-align: left !important;
+		}
+	
+		.portfolio-list__more-photo {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 -7px -14px -7px;
+		}
+		
+			.portfolio-list__photo-item  {
+				padding: 0 7px;
+				margin-bottom: 14px;
+				flex: 0 0 50%;
+			}
+			
+				.portfolio-list__photo-item img {
+					display: block;
+					max-width: 100%;
+				}
+
+@media (min-width: 768px) {
+	.portfolio-list__photo-item  {
+		flex: 0 0 33.33333%;
+	}
+}
+
+@media (min-width: 992px) {
+	.portfolio-list__photo-item  {
+		flex: 0 0 25%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.portfolio-list__photo-item  {
+		flex: 0 0 16.66666%;
+	}
+}

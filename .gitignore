@@ -1,0 +1,29 @@
+# files
+/.idea/
+.DS_Store
+Thumbs.db
+*.db
+*.psd
+*.pdf
+*.doc
+*.docx
+*.txt
+*.log
+*.config
+*.tgz
+*.tar.gz
+*.rar
+*.zip
+/.htaccess
+robots.txt
+
+# core
+/bitrix
+/logs
+/upload
+/.htaccess
+/urlrewrite.php
+/*.log
+/*.sql
+/*.xml
+/*.dt

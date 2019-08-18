@@ -1,0 +1,104 @@
+.feedbackform_wr
+{
+width:350px;
+padding:30px;
+background:#fff;
+}
+
+.feedbackform_wr .error_list
+{
+color:#ff0000;
+margin:0 0 15px 0;
+}
+
+.feedbackform_wr .starrequired
+{
+color:#ff0000;
+}
+
+.feedbackform_wr div.label
+{
+display:block;
+margin:0 0 18px 0;
+}
+
+.feedbackform_wr div.label span.fieldname
+{
+display:block;
+margin:0 0 5px 0;
+}
+
+.feedbackform_wr div.label input[type=text],
+.feedbackform_wr div.label input[type=email]
+{
+width:348px;
+height:40px;
+border:1px solid #c3c3c3;
+margin:0;
+padding:0;
+color:#2d2d2c;
+text-align:center;
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+
+.feedbackform_wr div.label textarea
+{
+width:348px;
+max-width:348px;
+min-width:348px;
+height:140px;
+max-height:140px;
+min-height:140px;
+border:1px solid #c3c3c3;
+margin:0;
+padding:0;
+resize:none;
+overflow-y:auto;
+color:#2d2d2c;
+text-align:center;
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+
+.feedbackform_wr div.label input[type=text].error,
+.feedbackform_wr div.label input[type=email].error,
+.feedbackform_wr div.label textarea.error
+{
+border-color:#ff0000;
+}
+
+.feedbackform_wr div.label input[type=submit]
+{
+width:129px;
+height:42px;
+line-height:42px;
+color:#fff;
+font-size:16px;
+text-transform:uppercase;
+display:inline-block;
+text-align:center;
+background:#c71633;
+border:none;
+cursor:pointer;
+}
+
+.feedbackform_wr div.label label
+{
+cursor:pointer;
+}
+
+.feedbackform_wr div.label .file_params
+{
+font-size:11px;
+font-style:italic;
+margin:5px 0 0 0;
+}
+
+.feedbackform_wr .send_ok
+{
+font-size:18px;
+text-align:center;
+margin:25px 0;
+color:#10a600;
+}

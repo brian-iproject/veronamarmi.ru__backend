@@ -1,0 +1,27 @@
+.footer-menu {
+}
+
+	.footer-menu__heading {
+		color: #fff;
+		margin-bottom: 12px;
+		text-transform: uppercase;
+	}
+
+	.footer-menu__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+		.footer-menu__item {
+			margin-bottom: 6px;
+		}
+		
+			.footer-menu__link {
+				color: #fff;
+			}
+			
+				.footer-menu__link:hover {
+					color: #fff;
+					text-decoration-color: rgba(255, 255, 255, 3);
+				}

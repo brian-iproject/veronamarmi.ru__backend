@@ -1,0 +1,1 @@
+<svg class="svg-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-timer"></use></svg> Часы работы: с 10:00 до 22:00

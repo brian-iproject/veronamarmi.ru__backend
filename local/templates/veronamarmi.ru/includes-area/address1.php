@@ -1,0 +1,1 @@
+<svg class="svg-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-map-point"></use></svg> 101000, г. Москва, ул. Маросейка д. 11, офис 3

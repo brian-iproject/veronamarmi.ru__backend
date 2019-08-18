@@ -1,0 +1,1 @@
+<svg class="svg-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-email"></use></svg> <a href="mailto:info@veronamarmi.ru">info@veronamarmi.ru</a>
