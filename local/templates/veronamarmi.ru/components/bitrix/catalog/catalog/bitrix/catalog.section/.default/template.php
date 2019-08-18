@@ -40,8 +40,9 @@ $this->setFrameMode(true);
             <?endforeach;?>
 					</dl>
 					<div class="catalog-list__price">
+							<div class="catalog-list__price-text">Цена:</div>
               <? if ($arItem['PROPERTIES']['PRICE']['VALUE']) { ?>
-								от <?=$arItem['PROPERTIES']['PRICE']['VALUE']?> $
+								от <?=$arItem['PROPERTIES']['PRICE']['VALUE']?> $ <span class="catalog-list__price-postfix">за м<sup>2</sup> (в руб. — по курсу)</span>
               <? } else { ?>
 								по запросу
               <? } ?>

@@ -51,8 +51,9 @@ if ($USER->IsAdmin()) {
         <?endforeach;?>
 			</dl>
 			<div class="catalog-detail__price">
+				<div class="catalog-detail__price-text">Цена:</div>
 				<? if ($arResult['PROPERTIES']['PRICE']['VALUE']) { ?>
-					от <?=$arResult['PROPERTIES']['PRICE']['VALUE']?> $
+					от <?=$arResult['PROPERTIES']['PRICE']['VALUE']?> $ <span class="catalog-detail__price-postfix">за м<sup>2</sup> (в руб. — по курсу)</span>
 				<? } else { ?>
 					по запросу
 				<? } ?>

@@ -151,10 +151,19 @@
 					margin-bottom: 12px;
 				}
 				
+					.catalog-detail__price-text {
+						font-size: 16px;
+						margin-bottom: 6px;
+					}
+
+					.catalog-detail__price-postfix {
+						font-size: 16px;
+					}
+				
 				.catalog-detail__order {
 					margin-bottom: 30px;
 				}
-						
+				
 				.catalog-detail__payments {
 					margin-top: 30px;
 				}

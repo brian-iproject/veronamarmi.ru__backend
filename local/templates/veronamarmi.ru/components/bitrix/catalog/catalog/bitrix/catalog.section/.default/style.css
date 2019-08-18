@@ -12,7 +12,6 @@
 	}
 	
 		.catalog-list__item-inner {
-			/*overflow: hidden;*/
 			flex-direction: column;
 			justify-content: space-between;
 			display: flex;
@@ -156,6 +155,15 @@
 					font-weight: 500;
 					margin-bottom: 12px;
 				}
+
+					.catalog-list__price-text {
+						margin-bottom: 4px;
+						font-size: 14px;
+					}
+					
+					.catalog-list__price-postfix {
+						font-size: 14px;
+					}
 
 @media (min-width: 481px) {
 	.catalog-list__item {
