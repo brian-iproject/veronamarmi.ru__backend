@@ -25,3 +25,13 @@ if (!empty($arResult['MORE_PHOTO'])) {
 		unset($arResized);
 	}
 }
+
+$pageTitle = $arResult['NAME'];
+if (strpos($arResult['NAME'], $arResult['SECTION']['PATH'][0]['NAME']) === false && !$arResult['PROPERTIES']['HIDE_PREFIX_NAME']['VALUE']) {
+    $pageTitle = $arResult['SECTION']['PATH'][0]['NAME'] . ' ' . $arResult['NAME'];
+}
+if ($arResult["IPROPERTY_VALUES"]["ELEMENT_PAGE_TITLE"]) {
+    $pageTitle = $arResult["IPROPERTY_VALUES"]["SECTION_META_TITLE"];
+}
+$arResult["SEO"]["PAGE_TITLE"] = $pageTitle;
+$this->__component->SetResultCacheKeys(Array("SEO"));

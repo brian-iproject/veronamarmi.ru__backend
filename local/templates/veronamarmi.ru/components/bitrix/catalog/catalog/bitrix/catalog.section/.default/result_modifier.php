@@ -9,6 +9,10 @@ foreach ($arResult['ITEMS'] as &$arItem) {
     );
     $arItem['PX_PREVIEW_PICTURE'] = array_change_key_case($arResized, CASE_UPPER);
     unset($arResized);
+
+    if (strpos($arItem['NAME'], $arResult['PATH'][0]['NAME']) === false && !$arItem['PROPERTIES']['HIDE_PREFIX_NAME']['VALUE']) {
+        $arItem['NAME'] = $arResult['PATH'][0]['NAME'] . ' ' . $arItem['NAME'];
+    }
 }
 
 $title = $arResult["NAME"];
