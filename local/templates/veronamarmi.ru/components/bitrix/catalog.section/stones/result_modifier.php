@@ -15,8 +15,16 @@ foreach ($arResult['ITEMS'] as &$arItem) {
      * После использования удаляем, чтобы не выводилось в цепочке навигации.
     */
     if ($arResult['PATH'][0]['NAME']) {
-        if (strpos($arItem['NAME'], $arResult['ROOT_SECTION_NAME']) === false && !$arItem['PROPERTIES']['HIDE_PREFIX_NAME']['VALUE']) {
+        if (strpos($arItem['NAME'], $arResult['PATH'][0]['NAME']) === false && !$arItem['PROPERTIES']['HIDE_PREFIX_NAME']['VALUE']) {
             $arItem['NAME'] = $arResult['PATH'][0]['NAME'] . ' ' . $arItem['NAME'];
+        }
+    } else {
+        $resSect = CIBlockElement::GetElementGroups($arItem['ID'], true, ['ID', 'NAME']);
+        while($arResSect = $resSect->Fetch())
+            $arItem['SECTION']['PATH'][] = $arResSect;
+
+        if (strpos($arItem['NAME'], $arItem['SECTION']['PATH'][0]['NAME']) === false && !$arItem['PROPERTIES']['HIDE_PREFIX_NAME']['VALUE']) {
+            $arItem['NAME'] = $arItem['SECTION']['PATH'][0]['NAME'] . ' ' . $arItem['NAME'];
         }
     }
 }

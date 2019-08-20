@@ -8,7 +8,6 @@ Thumbs.db
 *.doc
 *.docx
 *.txt
-*.log
 *.config
 *.tgz
 *.tar.gz
