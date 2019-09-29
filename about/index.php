@@ -18,10 +18,9 @@ $APPLICATION->SetTitle("О компании");
 <p>ИНН: 7723864100</p>
 <p>КПП: 772301001</p>
 <div class="h3">
-	Преимущества обработки натурального камня силами фирмы
+	Почему стоит выбрать нашу компанию?
 </div>
  #ADVANTAGES_STONE#
 <div class="hr hr--full-width">
 </div>
-#ADVANTAGES#
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+#ADVANTAGES#<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

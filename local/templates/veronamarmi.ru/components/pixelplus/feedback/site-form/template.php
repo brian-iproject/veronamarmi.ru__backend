@@ -138,12 +138,16 @@
 	        </div>
 					<? } ?>
 					<? if ($arParams["USE_CAPTCHA"] == "Y") { ?>
-						<div class="site-form__item">
-							<span>Защита от автоматического заполнения. <br> Введите текст, указанный на картинке <span class="starrequired">*</span></span>
-	            <? if ($arResult["CAPTCHA"]["ERROR"] == "C") { ?><span class="error_list">Неверно введены символы</span><? } ?>
-							<input type="text" name="<?=$arResult["CAPTCHA"]["NAME_WORD"]?>" size="30" maxlength="50" value="" class="inputtextcap<? if ($arResult["CAPTCHA"]["ERROR"] == "C") { ?> error<? } ?>">
+						<div class="site-form__item site-form__item--captcha">
+							<p>
+								Защита от автоматического заполнения. <br> Введите текст, указанный на картинке <span class="starrequired">*</span>
+                <? if ($arResult["CAPTCHA"]["ERROR"] == "C") { ?><br><span class="error_list">Неверно введены символы</span><? } ?>
+							</p>
+							<div class="site-form__captcha-image">
+								<img src="/bitrix/tools/captcha.php?captcha_sid=<?=$arResult["CAPTCHA"]["SID"]?>" width="180" height="40" alt="">
+							</div>
+							<input type="text" name="<?=$arResult["CAPTCHA"]["NAME_WORD"]?>" value="" class="site-form__field-text<? if ($arResult["CAPTCHA"]["ERROR"] == "C") { ?> error<? } ?>">
 							<input type="hidden" name="<?=$arResult["CAPTCHA"]["NAME_SID"]?>" value="<?=$arResult["CAPTCHA"]["SID"]?>">
-			        <img src="/bitrix/tools/captcha.php?captcha_sid=<?=$arResult["CAPTCHA"]["SID"]?>" width="180" height="40" alt="">
 						</div>
 					<? } ?>
 					<? foreach ($arResult["PARAM_FOR_PT"] as $forpt=>$fotptval) { ?>

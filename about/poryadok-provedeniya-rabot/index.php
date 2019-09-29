@@ -14,7 +14,7 @@ $APPLICATION->SetTitle("Порядок проведения работ");
 </ol>
 
 <div class="h3">
-	 Преимущества обработки натурального камня силами фирмы
+	 Почему стоит выбрать нашу компанию?
 </div>
  #ADVANTAGES_STONE#
 <div class="hr hr--full-width">

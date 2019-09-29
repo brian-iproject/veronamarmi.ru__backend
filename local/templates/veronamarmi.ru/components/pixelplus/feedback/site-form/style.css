@@ -33,12 +33,38 @@
 				margin-bottom: 4px;
 			}
 			
-			.site-form__item--privacy-policy {
+			.site-form__item--privacy-policy,
+			.site-form__item--captcha {
 				font-size: 12px;
 			}
 			
 				.site-form__star-required {
 					color: #ff0000;
+				}
+				
+			.site-form__item--captcha {
+				display: flex;
+				flex-wrap: wrap;
+			}
+				
+				.site-form__item--captcha p {
+					flex: 0 0 100%;
+					margin-bottom: 10px;
+				}
+				
+				.site-form__captcha-image {
+					flex: 0 0 auto;
+					max-width: 50%;
+					padding-right: 10px;
+				}
+				
+					.site-form__captcha-image img {
+						display: block;
+						max-width: 100%;
+					}
+				
+				.site-form__item--captcha .site-form__field-text {
+					flex: 1 1 50%;
 				}
 		
 			.site-form__field-text,

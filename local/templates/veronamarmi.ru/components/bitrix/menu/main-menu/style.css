@@ -335,10 +335,10 @@
 							
 								.main-menu__link--lvl2,
 								.main-menu__link--lvl3 {
-									height: 46px;
+									height: 36px;
 									padding: 0 6px;
+									white-space: nowrap;
 								}
-	
 	
 									.main-menu__item--lvl2.main-menu__item--parent .main-menu__link--lvl2:after {
 										border-top: 3px solid transparent;
@@ -349,8 +349,7 @@
 										margin-left: 4px;
 										transition: border-color .3s;
 									}
-								
-	
+									
 								.main-menu__list-wrapper--lvl3 {
 									left: 100%;
 									position: absolute;

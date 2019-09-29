@@ -168,61 +168,61 @@ $this->setFrameMode(true); ?>
     ?>
 		<div class="h3" style="text-align: left">Обратная связь</div>
     <?$APPLICATION->IncludeComponent(
-        "pixelplus:feedback",
-        "site-form",
-        array(
-            "ADDDATA_IN_INFOBLOCK" => "Y",
-            "ADD_PLACEHOLDER" => "Y",
-            "AJAX_VARIBLE" => "",
-            "CACHE_TIME" => "0",
-            "CACHE_TYPE" => "A",
-            "EVENT_MESSAGE_ID" => array(
-                0 => "11",
-                1 => "",
-            ),
-            "EVENT_NAME" => "PIXELPLUS_FEEDBACK",
-            "FIELDS_LIST" => array(
-                0 => "NAME",
-                1 => "PHONE",
-                2 => "EMAIL",
-                3 => "MESSAGE",
-                4 => "",
-            ),
-            "FIELDS_LIST_REQUIRED" => array(
-                0 => "NAME",
-                1 => "PHONE",
-                2 => "",
-            ),
-            "FIELDS_PREFIX" => "FEEDBACK",
-            "FORM_NAME" => "",
-            "PARAM_FOR_PT" => array(
-            ),
-            "PX_AJAX" => "N",
-            "SHOW_ERROR_LIST" => "N",
-            "USE_BASE" => "N",
-            "USE_CAPTCHA" => "N",
-            "USE_CSS_FILE" => "Y",
-            "USE_JS_FILE" => "N",
-            "COMPONENT_TEMPLATE" => "site-form",
-            "IBLOCK_ID" => "5",
-            "ADDDATA_IN_INFOBLOCK_NAME" => "#NAME# - #FULL_TIME#",
-            "SECTION_ID" => "55",
-            "ADD_NA" => "N",
-            "PREVIEW_TEXT_FIELDS" => "MESSAGE",
-            "WRITE_TO_DETAIL_TEXT" => "N",
-            "FORM_DESCRIPTION" => "",
-            "BASE_IBLOCK_ID" => array(
-                0 => "2",
-                1 => "3",
-            ),
-            "BASE_ID" => $_REQUEST["ID"],
-            "FORM_CSS_CLASS" => "site-form--two-column",
-            "YM_COUNTER_ID" => "8100544",
-            "YM_GOAL_ID_SUBMIT" => "JS-FORM",
-            "YM_GOAL_ID_SUCCESS" => "JS-FORM-USPESHNO"
-        ),
-        false
-    );?>
+	"pixelplus:feedback", 
+	"site-form", 
+	array(
+		"ADDDATA_IN_INFOBLOCK" => "Y",
+		"ADD_PLACEHOLDER" => "Y",
+		"AJAX_VARIBLE" => "",
+		"CACHE_TIME" => "0",
+		"CACHE_TYPE" => "A",
+		"EVENT_MESSAGE_ID" => array(
+			0 => "11",
+			1 => "",
+		),
+		"EVENT_NAME" => "PIXELPLUS_FEEDBACK",
+		"FIELDS_LIST" => array(
+			0 => "NAME",
+			1 => "PHONE",
+			2 => "EMAIL",
+			3 => "MESSAGE",
+			4 => "",
+		),
+		"FIELDS_LIST_REQUIRED" => array(
+			0 => "NAME",
+			1 => "PHONE",
+			2 => "",
+		),
+		"FIELDS_PREFIX" => "FEEDBACK",
+		"FORM_NAME" => "",
+		"PARAM_FOR_PT" => array(
+		),
+		"PX_AJAX" => "N",
+		"SHOW_ERROR_LIST" => "N",
+		"USE_BASE" => "N",
+		"USE_CAPTCHA" => "Y",
+		"USE_CSS_FILE" => "Y",
+		"USE_JS_FILE" => "N",
+		"COMPONENT_TEMPLATE" => "site-form",
+		"IBLOCK_ID" => "5",
+		"ADDDATA_IN_INFOBLOCK_NAME" => "#NAME# - #FULL_TIME#",
+		"SECTION_ID" => "55",
+		"ADD_NA" => "N",
+		"PREVIEW_TEXT_FIELDS" => "MESSAGE",
+		"WRITE_TO_DETAIL_TEXT" => "N",
+		"FORM_DESCRIPTION" => "",
+		"BASE_IBLOCK_ID" => array(
+			0 => "2",
+			1 => "3",
+		),
+		"BASE_ID" => $_REQUEST["ID"],
+		"FORM_CSS_CLASS" => "site-form--two-column",
+		"YM_COUNTER_ID" => "8100544",
+		"YM_GOAL_ID_SUBMIT" => "JS-FORM",
+		"YM_GOAL_ID_SUCCESS" => "JS-FORM-USPESHNO"
+	),
+	false
+);?>
 		<div class="hr hr--full-width"></div>
 		<div class="h2">Другие наши товары</div>
     <?$APPLICATION->IncludeComponent(
