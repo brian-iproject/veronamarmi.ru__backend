@@ -43,18 +43,19 @@ $strQueryText = QueryGetData(
 $xml = new SimpleXMLElement($strQueryText);
 
 foreach ($xml->Valute as $currency) {
+
     $currency = get_object_vars($currency);
     $arResult['CBRF_CURRENCIES'][$currency['CharCode']] = $currency;
 }
 
-
 foreach ($arResult['CBRF_CURRENCIES'] as $currencyCode => $currency) {
+    if (!in_array($currency['CharCode'], array('USD', 'EUR')))
+        continue;
     $data = array(
-        "UF_VALUE"=> $currency['Value']/$currency['Nominal'],
+        "UF_VALUE"=> str_replace(',', '.', $currency['Value'])/$currency['Nominal'],
         "UF_NAME"=> $currency['Name'],
         "UF_XML_ID"=> $currency['CharCode']
     );
-
     if ($arResult['CURRENCIES'][$currencyCode]) {
         $result = $entity_data_class::update($arResult['CURRENCIES'][$currencyCode]['ID'], $data);
     } else {
