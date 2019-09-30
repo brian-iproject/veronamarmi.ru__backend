@@ -37,6 +37,8 @@
 								$arFieldParams["PARAMS"]["PLACEHOLDER"] = "Поле «".$arFieldParams['NAME']."» должно быть заполнено";
 							} else {
 								$arFieldParams["PARAMS"]["PLACEHOLDER"] = $arFieldParams["PARAMS"]["PLACEHOLDER"]?$arFieldParams["PARAMS"]["PLACEHOLDER"]:$arFieldParams["NAME"];
+								if ($arFieldParams["IS_REQUIRED"]== "Y")
+                    $arFieldParams["PARAMS"]["PLACEHOLDER"] .= '*';
 							}
 	            $strFieldPlaceholder = ' placeholder="'.$arFieldParams["PARAMS"]["PLACEHOLDER"].'"';
 						}
@@ -160,6 +162,9 @@
 			        <input type="hidden" name="<?=$arResult["SEND_BUTTON_NAME"]?>" value="Y">
 			        <input type="submit" class="site-button site-form__button">
 			    </div>
+					<div class="site-form__item site-form__item--required-text">
+						<span class="form-required starrequired">*</span> - обязательные поля
+					</div>
 		    </div>
 			</form>
 		<? } ?>
