@@ -40,12 +40,22 @@ $this->setFrameMode(true);
             <?endforeach;?>
 					</dl>
 					<div class="catalog-list__price">
-							<div class="catalog-list__price-text">Цена:</div>
+						<div class="catalog-list__price-text">Цена:</div>
+						<? if (!empty($arItem['PX_PRICES'])) { ?>
+							от <?=$arItem['PX_PRICES']['BASE']['VALUE_PRINT']?> <?=$arItem['PX_PRICES']['BASE']['SYMBOL']?>
+							<? if ($arItem['PX_PRICES']['RUB']) { ?>
+								<span class="catalog-list__price-postfix">
+                  (<?=$arItem['PX_PRICES']['RUB']['VALUE_PRINT']?> <?=$arItem['PX_PRICES']['RUB']['SYMBOL']?>)
+								</span>
+							<? } ?>
+							<span class="catalog-list__price-postfix">за м<sup>2</sup></span>
+						<? } else { ?>
               <? if ($arItem['PROPERTIES']['PRICE']['VALUE']) { ?>
 								от <?=$arItem['PROPERTIES']['PRICE']['VALUE']?> $ <span class="catalog-list__price-postfix">за м<sup>2</sup> (в руб. — по курсу)</span>
               <? } else { ?>
 								по запросу
               <? } ?>
+						<? } ?>
 					</div>
 					<div class="catalog-list__order">
 						<span class="site-button" data-form="order-stone-list" data-item="<?=$arItem['IBLOCK_ID']?>/<?=$arItem['ID']?>" onclick="ym(8100544, 'reachGoal', 'JS-ZAKAZ-KAMNI-KAT'); return true;">Заказать</span>

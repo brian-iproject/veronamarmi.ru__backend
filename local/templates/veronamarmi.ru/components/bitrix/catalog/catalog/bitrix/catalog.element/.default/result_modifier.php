@@ -1,4 +1,44 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+use Bitrix\Main\Loader;
+use Bitrix\Highloadblock as HL;
+use Bitrix\Main\Entity;
+Loader::includeModule("highloadblock");
+
+$hlbl = 3;
+$hlblock = HL\HighloadBlockTable::getById($hlbl)->fetch();
+
+$entity = HL\HighloadBlockTable::compileEntity($hlblock);
+$entity_data_class = $entity->getDataClass();
+
+$rsData = $entity_data_class::getList(array(
+    "select" => array("*"),
+    "order" => array(),
+    "filter" => array()
+));
+
+while($arData = $rsData->Fetch()){
+    $arResult['PX_CURRENCY'][$arData['UF_XML_ID']] = $arData;
+}
+
+if ($arResult['DISPLAY_PROPERTIES']['CURRENCY']['VALUE']) {
+    $arResult['PX_PRICES'] = [
+        'BASE' => [
+            'CURRENCY' => $arResult['DISPLAY_PROPERTIES']['CURRENCY']['VALUE'],
+            'VALUE' => $arResult['PROPERTIES']['PRICE']['VALUE'],
+            'VALUE_PRINT' => number_format($arResult['PROPERTIES']['PRICE']['VALUE'], 0, '.', ' ' ),
+            'SYMBOL' => $arResult['PX_CURRENCY'][$arResult['DISPLAY_PROPERTIES']['CURRENCY']['VALUE']]['UF_SYMBOL']
+        ]
+    ];
+    if ($arResult['PX_PRICES']['BASE']['CURRENCY'] != 'RUB') {
+        $arResult['PX_PRICES']['RUB'] = [
+            'CURRENCY' => $arResult['PX_CURRENCY']['RUB']['UF_XML_ID'],
+            'VALUE' => $arResult['PX_PRICES']['BASE']['VALUE'] * $arResult['PX_CURRENCY'][$arResult['DISPLAY_PROPERTIES']['CURRENCY']['VALUE']]['UF_VALUE'],
+            'VALUE_PRINT' => number_format($arResult['PX_PRICES']['BASE']['VALUE'] * $arResult['PX_CURRENCY'][$arResult['DISPLAY_PROPERTIES']['CURRENCY']['VALUE']]['UF_VALUE'], 0, '.', ' ' ),
+            'SYMBOL' => $arResult['PX_CURRENCY']['RUB']['UF_SYMBOL']
+        ];
+    }
+}
+
 if ($arResult["DETAIL_PICTURE"]) {
     $arResized = CFile::ResizeImageGet(
         $arResult["DETAIL_PICTURE"],

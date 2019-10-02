@@ -52,10 +52,20 @@ if ($USER->IsAdmin()) {
 			</dl>
 			<div class="catalog-detail__price">
 				<div class="catalog-detail__price-text">Цена:</div>
-				<? if ($arResult['PROPERTIES']['PRICE']['VALUE']) { ?>
-					от <?=$arResult['PROPERTIES']['PRICE']['VALUE']?> $ <span class="catalog-detail__price-postfix">за м<sup>2</sup> (в руб. — по курсу)</span>
-				<? } else { ?>
-					по запросу
+        <? if (!empty($arResult['PX_PRICES'])) { ?>
+					от <?=$arResult['PX_PRICES']['BASE']['VALUE_PRINT']?> <?=$arResult['PX_PRICES']['BASE']['SYMBOL']?>
+          <? if ($arResult['PX_PRICES']['RUB']) { ?>
+						<span class="catalog-list__price-postfix">
+							(<?=$arResult['PX_PRICES']['RUB']['VALUE_PRINT']?> <?=$arResult['PX_PRICES']['RUB']['SYMBOL']?>)
+						</span>
+          <? } ?>
+					<span class="catalog-list__price-postfix">за м<sup>2</sup></span>
+        <? } else { ?>
+					<? if ($arResult['PROPERTIES']['PRICE']['VALUE']) { ?>
+						от <?=$arResult['PROPERTIES']['PRICE']['VALUE']?> $ <span class="catalog-detail__price-postfix">за м<sup>2</sup> (в руб. — по курсу)</span>
+					<? } else { ?>
+						по запросу
+					<? } ?>
 				<? } ?>
 			</div>
 			<div class="catalog-detail__order">

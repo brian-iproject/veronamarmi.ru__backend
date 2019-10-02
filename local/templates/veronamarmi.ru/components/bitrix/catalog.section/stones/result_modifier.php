@@ -1,4 +1,25 @@
 <? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
+use Bitrix\Main\Loader;
+use Bitrix\Highloadblock as HL;
+use Bitrix\Main\Entity;
+Loader::includeModule("highloadblock");
+
+$hlbl = 3;
+$hlblock = HL\HighloadBlockTable::getById($hlbl)->fetch();
+
+$entity = HL\HighloadBlockTable::compileEntity($hlblock);
+$entity_data_class = $entity->getDataClass();
+
+$rsData = $entity_data_class::getList(array(
+    "select" => array("*"),
+    "order" => array(),
+    "filter" => array()
+));
+
+while($arData = $rsData->Fetch()){
+    $arResult['PX_CURRENCY'][$arData['UF_XML_ID']] = $arData;
+}
+
 foreach ($arResult['ITEMS'] as &$arItem) {
     $arResized = CFile::ResizeImageGet(
         $arItem["PREVIEW_PICTURE"],
@@ -25,6 +46,25 @@ foreach ($arResult['ITEMS'] as &$arItem) {
 
         if (strpos($arItem['NAME'], $arItem['SECTION']['PATH'][0]['NAME']) === false && !$arItem['PROPERTIES']['HIDE_PREFIX_NAME']['VALUE']) {
             $arItem['NAME'] = $arItem['SECTION']['PATH'][0]['NAME'] . ' ' . $arItem['NAME'];
+        }
+    }
+
+    if ($arItem['DISPLAY_PROPERTIES']['CURRENCY']['VALUE']) {
+        $arItem['PX_PRICES'] = [
+            'BASE' => [
+                'CURRENCY' => $arItem['DISPLAY_PROPERTIES']['CURRENCY']['VALUE'],
+                'VALUE' => $arItem['PROPERTIES']['PRICE']['VALUE'],
+                'VALUE_PRINT' => number_format($arItem['PROPERTIES']['PRICE']['VALUE'], 0, '.', ' ' ),
+                'SYMBOL' => $arResult['PX_CURRENCY'][$arItem['DISPLAY_PROPERTIES']['CURRENCY']['VALUE']]['UF_SYMBOL']
+            ]
+        ];
+        if ($arItem['PX_PRICES']['BASE']['CURRENCY'] != 'RUB') {
+            $arItem['PX_PRICES']['RUB'] = [
+                'CURRENCY' => $arResult['PX_CURRENCY']['RUB']['UF_XML_ID'],
+                'VALUE' => $arItem['PX_PRICES']['BASE']['VALUE'] * $arResult['PX_CURRENCY'][$arItem['DISPLAY_PROPERTIES']['CURRENCY']['VALUE']]['UF_VALUE'],
+                'VALUE_PRINT' => number_format($arItem['PX_PRICES']['BASE']['VALUE'] * $arResult['PX_CURRENCY'][$arItem['DISPLAY_PROPERTIES']['CURRENCY']['VALUE']]['UF_VALUE'], 0, '.', ' ' ),
+                'SYMBOL' => $arResult['PX_CURRENCY']['RUB']['UF_SYMBOL']
+            ];
         }
     }
 }
