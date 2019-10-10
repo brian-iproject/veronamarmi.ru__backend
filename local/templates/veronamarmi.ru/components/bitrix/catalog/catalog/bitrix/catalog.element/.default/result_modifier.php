@@ -20,7 +20,7 @@ while($arData = $rsData->Fetch()){
     $arResult['PX_CURRENCY'][$arData['UF_XML_ID']] = $arData;
 }
 
-if ($arResult['DISPLAY_PROPERTIES']['CURRENCY']['VALUE']) {
+if ($arResult['DISPLAY_PROPERTIES']['CURRENCY']['VALUE'] && $arResult['PROPERTIES']['PRICE']['VALUE']) {
     $arResult['PX_PRICES'] = [
         'BASE' => [
             'CURRENCY' => $arResult['DISPLAY_PROPERTIES']['CURRENCY']['VALUE'],

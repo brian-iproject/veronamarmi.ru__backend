@@ -50,11 +50,7 @@ $this->setFrameMode(true);
 							<? } ?>
 							<span class="catalog-list__price-postfix">за м<sup>2</sup></span>
 						<? } else { ?>
-              <? if ($arItem['PROPERTIES']['PRICE']['VALUE']) { ?>
-								от <?=$arItem['PROPERTIES']['PRICE']['VALUE']?> $ <span class="catalog-list__price-postfix">за м<sup>2</sup> (в руб. — по курсу)</span>
-              <? } else { ?>
-								по запросу
-              <? } ?>
+							по запросу
 						<? } ?>
 					</div>
 					<div class="catalog-list__order">

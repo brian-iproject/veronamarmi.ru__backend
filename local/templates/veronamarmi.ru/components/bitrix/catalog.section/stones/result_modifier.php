@@ -49,7 +49,7 @@ foreach ($arResult['ITEMS'] as &$arItem) {
         }
     }
 
-    if ($arItem['DISPLAY_PROPERTIES']['CURRENCY']['VALUE']) {
+    if ($arItem['DISPLAY_PROPERTIES']['CURRENCY']['VALUE'] && $arItem['PROPERTIES']['PRICE']['VALUE']) {
         $arItem['PX_PRICES'] = [
             'BASE' => [
                 'CURRENCY' => $arItem['DISPLAY_PROPERTIES']['CURRENCY']['VALUE'],

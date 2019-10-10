@@ -61,11 +61,7 @@ if ($USER->IsAdmin()) {
           <? } ?>
 					<span class="catalog-list__price-postfix">за м<sup>2</sup></span>
         <? } else { ?>
-					<? if ($arResult['PROPERTIES']['PRICE']['VALUE']) { ?>
-						от <?=$arResult['PROPERTIES']['PRICE']['VALUE']?> $ <span class="catalog-detail__price-postfix">за м<sup>2</sup> (в руб. — по курсу)</span>
-					<? } else { ?>
-						по запросу
-					<? } ?>
+					по запросу
 				<? } ?>
 			</div>
 			<div class="catalog-detail__order">
