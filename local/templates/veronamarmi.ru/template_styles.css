@@ -245,8 +245,8 @@ body {
 
 		.page-footer__company {
 			display: flex;
-			flex-wrap: wrap;
 			flex: 0 0 100%;
+			flex-wrap: wrap;
 			justify-content: space-between;
 		}
 		
@@ -269,16 +269,16 @@ body {
 			
 			.page-footer__social-networks {
 				display: flex;
-				margin-left: 50%;
 				margin-bottom: 14px;
+				margin-left: 50%;
 			}
 			
 				.page-footer__social-networks-heading {
-					font-size: 16px;
-					color: #fff;
-					padding-left: 8px;
-					margin-right: 8px;
 					align-items: center;
+					color: #fff;
+					font-size: 16px;
+					margin-right: 8px;
+					padding-left: 8px;
 				}
 		
 		.page-footer__footer-menu {
@@ -519,43 +519,40 @@ body {
 	}
 	
 		.page-footer__inner {
-			flex-wrap: nowrap;
 		}
 		
 			.page-footer__company {
+				flex: 0 0 50%;
+				padding-right: 30px;
 				display: block;
-				flex: 0 0 26%;
 			}
-			
-				.page-footer__logo {
-					margin-right: 0;
-				}
 				
 				.page-footer__social-networks {
 					margin: 0;
 				}
-		
-			.page-footer__footer-menu {
-				display: block;
-			}
-	
+			
 			.page-footer__contacts {
+				flex: 0 0 50%;
 				display: block;
-				flex: 0 0 24%;
 				text-align: right;
 			}
-			
-				.page-footer__phone-email {
-					margin-right: 0;
+	
+				.page-footer__phone {
+					font-size: 20px;
 				}
-			
-					.page-footer__phone {
-						font-size: 20px;
-					}
-					
+				
 				.page-footer__callback {
 					margin-top: 16px;
 				}
+			
+			.page-footer__footer-menu {
+				display: block;
+				flex: 0 0 100%;
+				margin-bottom: 30px;
+				max-width: 100%;
+				order: -1;
+				padding: 0;
+			}
 	
 	.bottomline {
 	}
@@ -624,6 +621,48 @@ body {
 	.page-footer {
 		font-size: 14px;
 	}
+	
+		.page-footer__inner {
+			flex-wrap: nowrap;
+		}
+		
+			.page-footer__company {
+				display: block;
+				flex: 0 0 26%;
+			}
+			
+				.page-footer__logo {
+					margin-right: 0;
+				}
+				
+				.page-footer__social-networks {
+					margin: 0;
+				}
+		
+			.page-footer__footer-menu {
+				display: block;
+				flex: 0 0 50%;
+				max-width: 50%;
+				order: 0;
+			}
+	
+			.page-footer__contacts {
+				display: block;
+				flex: 0 0 24%;
+				text-align: right;
+			}
+			
+				.page-footer__phone-email {
+					margin-right: 0;
+				}
+			
+					.page-footer__phone {
+						font-size: 20px;
+					}
+					
+				.page-footer__callback {
+					margin-top: 16px;
+				}
 }
 
 @media (min-width: 1200px) {

@@ -14,9 +14,9 @@
 	}
 	
 		.footer-menu__item--lvl1 {
-			flex: 0 0 33.33333%;
+			flex: 0 0 25%;
 			margin-bottom: 30px;
-			max-width: 33.33333%;
+			max-width: 25%;
 			padding: 0 15px;
 		}
 		
