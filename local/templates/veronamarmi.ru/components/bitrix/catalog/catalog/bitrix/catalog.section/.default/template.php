@@ -38,6 +38,8 @@ $this->setFrameMode(true);
 	              </span></dd>
               <? endif;?>
             <?endforeach;?>
+						<dt><span>Камень</span></dt>
+						<dd><span><?=$arItem['PROPERTIES']['SECTION_STONE_TYPE']['VALUE']?></span></dd>
 					</dl>
 					<div class="catalog-list__price">
 						<div class="catalog-list__price-text">Цена:</div>

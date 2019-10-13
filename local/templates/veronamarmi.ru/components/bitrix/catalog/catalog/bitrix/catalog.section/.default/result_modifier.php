@@ -35,6 +35,8 @@ foreach ($arResult['ITEMS'] as &$arItem) {
         $arItem['NAME'] = $arResult['PATH'][0]['NAME'] . ' ' . $arItem['NAME'];
     }
 
+    $arItem['PROPERTIES']['SECTION_STONE_TYPE']['VALUE'] = $arResult['PATH'][0]['NAME'];
+
     if ($arItem['DISPLAY_PROPERTIES']['CURRENCY']['VALUE'] && $arItem['PROPERTIES']['PRICE']['VALUE']) {
         $arItem['PX_PRICES'] = [
             'BASE' => [
