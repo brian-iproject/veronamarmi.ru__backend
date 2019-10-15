@@ -39,6 +39,8 @@ foreach ($arResult['ITEMS'] as &$arItem) {
         if (strpos($arItem['NAME'], $arResult['PATH'][0]['NAME']) === false && !$arItem['PROPERTIES']['HIDE_PREFIX_NAME']['VALUE']) {
             $arItem['NAME'] = $arResult['PATH'][0]['NAME'] . ' ' . $arItem['NAME'];
         }
+
+        $arItem['PROPERTIES']['SECTION_STONE_TYPE']['VALUE'] = $arResult['PATH'][0]['NAME'];
     } else {
         $resSect = CIBlockElement::GetElementGroups($arItem['ID'], true, ['ID', 'NAME']);
         while($arResSect = $resSect->Fetch())
@@ -47,6 +49,8 @@ foreach ($arResult['ITEMS'] as &$arItem) {
         if (strpos($arItem['NAME'], $arItem['SECTION']['PATH'][0]['NAME']) === false && !$arItem['PROPERTIES']['HIDE_PREFIX_NAME']['VALUE']) {
             $arItem['NAME'] = $arItem['SECTION']['PATH'][0]['NAME'] . ' ' . $arItem['NAME'];
         }
+
+        $arItem['PROPERTIES']['SECTION_STONE_TYPE']['VALUE'] = $arItem['SECTION']['PATH'][0]['NAME'];
     }
 
     if ($arItem['DISPLAY_PROPERTIES']['CURRENCY']['VALUE'] && $arItem['PROPERTIES']['PRICE']['VALUE']) {
