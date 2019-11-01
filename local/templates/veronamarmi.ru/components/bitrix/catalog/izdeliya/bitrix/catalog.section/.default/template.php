@@ -12,7 +12,7 @@
 $this->setFrameMode(true);
 ?>
 <? if (count($arResult['ITEMS'])) { ?>
-	<h2>Выполненные нами объекты</h2>
+	<div class="h2">Выполненные нами объекты</div>
 	<div class="products-list">
 		<?
 		foreach ($arResult['ITEMS'] as $arItem) {

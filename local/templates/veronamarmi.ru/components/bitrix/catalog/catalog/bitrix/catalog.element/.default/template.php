@@ -85,6 +85,7 @@ if ($USER->IsAdmin()) {
 				<input type="radio" id="description" name="tabs" class="catalog-detail__tabs-radio" checked="">
 				<label for="description" class="catalog-detail__tabs-item">Описание</label>
 				<div class="catalog-detail__tabs-body">
+					<p class="strong">Цены указаны за м<sup>2</sup> изделия</p>
 					<?=$arResult['DETAIL_TEXT']?>
 				</div>
 			<? } ?>
