@@ -48,8 +48,6 @@ foreach ($xml->Valute as $currency) {
     $arResult['CBRF_CURRENCIES'][$currency['CharCode']] = $currency;
 }
 
-file_put_contents("/home/mramorland/veronamarmi.ru/docs/currency.txt", print_r($arResult['CBRF_CURRENCIES'], true), FILE_APPEND);
-
 foreach ($arResult['CBRF_CURRENCIES'] as $currencyCode => $currency) {
     if (!in_array($currency['CharCode'], array('USD', 'EUR')))
         continue;
