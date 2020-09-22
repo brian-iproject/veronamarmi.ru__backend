@@ -51,6 +51,30 @@ $APPLICATION->SetTitle("Главная");
 	<p>
 		Обращайтесь! Менеджеры готовы ответить на интересующие вопросы относительно выполняемых работ и оперативно выполнить заказ.
 	</p>
+<div class="table-price">
+	<div class="table-price__container">
+		<table class="table-price__table">
+<thead>
+<tr>
+<td colspan="3" style="text-align: center">Территория обслуживания</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 33.33%; text-align: center"><a href="/balashikha/">Балашиха</a></td>
+<td style="width: 33.33%; text-align: center"><a href="/zvenigorod/">Звенигород</a></td>
+<td style="width: 33.33%; text-align: center"><a href="/krasnogorsk/">Красногорск</a></td>
+</tr>
+<tr>
+<td style="width: 33.33%; text-align: center"><a href="/istra/">Истра</a></td>
+<td style="width: 33.33%; text-align: center"> </td>
+<td style="width: 33.33%; text-align: center"> </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
 </div>
  </section> <section class="page-content__section">
 <?$APPLICATION->IncludeComponent(

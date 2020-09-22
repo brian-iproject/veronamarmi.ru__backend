@@ -3,100 +3,97 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetPageProperty("title", "Цены на работы с натуральным камнем: отделка, облицовка, монтаж мрамора, гранита (Москва)");
 $APPLICATION->SetPageProperty("description", "✔️ Закажите отделку, облицовку, монтаж мрамора и натурального камня в Москве! ► ► ► Скидки от 20%! Изделия из натурального камня на заказ для дома и дачи! Звоните!");
 $APPLICATION->SetTitle("Прайс-лист");
-?><h2>Стоимость монтажных работ по натуральному камню</h2>
-Общий прайс для скачивания: <a href="/upload/pricelist.xlsx"><img width="30" src="/upload/medialibrary/b3d/ms_excel.png" height="30"></a>&nbsp;<a href="/upload/pricelist.xlsx">Сводный_прайс-лист_veronamarmi.ru.xls</a> (14КБ)
+?><h2>Изделия из натурального камня</h2>
+ Общий прайс для скачивания: <a href="/upload/pricelist.xlsx"><img width="30" src="/upload/medialibrary/b3d/ms_excel.png" height="30"></a>&nbsp;<a href="/upload/pricelist.xlsx">Сводный_прайс-лист_veronamarmi.ru.xls</a> (14КБ)
 <div class="table-price">
 	<div class="table-price__container">
 		<table class="table-price__table">
 		<thead>
 		<tr>
-			<td>
+			<td width="70%">
 				<p>
-					<strong>Наименование</strong>
+ <strong>Наименование</strong>
 				</p>
 			</td>
-
 			<td>
 				<p>
-					<strong>Стоимость (руб.)</strong>
-				</p>
-			</td>
-		</tr>
-                </thead>
-                <tbody>
-		<tr>
-			<td>
-				<p>
-					Столешницы на кухню (3000*600*30) с вырезами под мойку и варочную поверхность
-				</p>
-			</td>
-
-			<td>
-				<p>
-					30 000 (без установки и доставки)
+ <strong>Стоимость (руб.) без установки и доставки</strong>
 				</p>
 			</td>
 		</tr>
+		</thead>
+		<tbody>
 		<tr>
 			<td>
 				<p>
-					Подоконники (L*200*20)
+					 Столешницы на кухню (3000*600*30) с вырезами под мойку и варочную поверхность
 				</p>
 			</td>
-
 			<td>
 				<p>
-					от 3 576 (без установки и доставки)
+					 30 000
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Подоконники (L*200*30)
+					 Подоконники (L*200*20)
 				</p>
 			</td>
-
 			<td>
 				<p>
-					от 4 820 (без установки и доставки)
+					 от 3 576
 				</p>
 			</td>
 		</tr>
-                </tbody>
-</table>
+		<tr>
+			<td>
+				<p>
+					 Подоконники (L*200*30)
+				</p>
+			</td>
+			<td>
+				<p>
+					 от 4 820
+				</p>
+			</td>
+		</tr>
+		</tbody>
+		</table>
+	</div>
 </div>
-</div>
+<h2>Монтажные работы по натуральному камню</h2>
 <div class="table-price">
 	<div class="table-price__container">
 		<table class="table-price__table">
 		<thead>
 		<tr>
-			<td rowspan="2">
+			<td rowspan="2" width="45%">
 				<p>
-					<strong>Наименование работ</strong>
+ <strong>Наименование работ</strong>
 				</p>
 			</td>
 			<td rowspan="2">
 				<p>
-					<strong>Единица измерения</strong>
+ <strong>Единица измерения</strong>
 				</p>
 			</td>
 			<td colspan="4">
 				<p>
-					<strong>Стоимость работ (руб.)</strong>
+ <strong>Стоимость работ (руб.)</strong>
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
-					<strong>Мрамор</strong>
+ <strong>Мрамор</strong>
 				</p>
 			</td>
 			<td colspan="2">
 				<p>
-					<strong>Гранит</strong>
+ <strong>Гранит</strong>
 				</p>
 			</td>
 		</tr>
@@ -105,677 +102,607 @@ $APPLICATION->SetTitle("Прайс-лист");
 		<tr>
 			<td colspan="6" style="text-align:center; background-color:#dcc4b1">
 				<p>
-					Стоимость услуг по укладке полов натуральным камнем
+					 Услуги по укладке полов
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Плитка толщиной до 20 мм. (мрамор, гранит)
+					 Плитка толщиной до 20 мм.&nbsp;
 				</p>
 			</td>
 			<td>
 				<p>
-					м2
+					 м2
 				</p>
 			</td>
 			<td colspan="2">
 				<p>
-					2500
+					 2 500
 				</p>
 			</td>
 			<td colspan="2">
 				<p>
-					2500
+					 2 500
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Плитка толщиной от 30 мм. (мрамор, гранит)
+					 Плитка толщиной от 30 мм.&nbsp;
 				</p>
 			</td>
 			<td>
 				<p>
-					м2
+					 м2
 				</p>
 			</td>
 			<td colspan="2">
 				<p>
-					3200
+					 3 200
 				</p>
 			</td>
 			<td colspan="2">
 				<p>
-					3200
+					 3 200
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Укладка плиты по диагонали (мрамор, гранит)
+					 Укладка плиты по диагонали&nbsp;
 				</p>
 			</td>
 			<td>
 				<p>
-					м2
+					 м2
 				</p>
 			</td>
 			<td colspan="2">
 				<p>
-					2700
+					 2 700
 				</p>
 			</td>
 			<td colspan="2">
 				<p>
-					2700
+					 2 700
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Укладка плиты с рисунком (мрамор, гранит, мраморная композиционная плита)
+					 Укладка плиты с рисунком
 				</p>
 			</td>
 			<td>
 				<p>
-					м2
+					 м2
 				</p>
 			</td>
 			<td colspan="2">
 				<p>
-					3200
+					 3 200
 				</p>
 			</td>
 			<td colspan="2">
 				<p>
-					3200
+					 3 200
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Крупногабаритными плитами
+					 Крупногабаритными плитами
 				</p>
 			</td>
 			<td>
 				<p>
-					м2
+					 м2
 				</p>
 			</td>
 			<td colspan="4">
 				<p>
-					от 4500
+					 от 4 500
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Полировка полов с кристаллизацией
+					 Полировка полов с кристаллизацией
 				</p>
 			</td>
 			<td>
 				<p>
-					м2
+					 м2
 				</p>
 			</td>
 			<td colspan="4">
 				<p>
-					от 2000
+					 от 2 000
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Укладка мозаичных полов
+					 Укладка мозаичных полов
 				</p>
 			</td>
 			<td>
 				<p>
-					м2
+					 м2
 				</p>
 			</td>
 			<td colspan="4">
 				<p>
-					от 5000
+					 от 5 000
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="6" style="text-align:center; background-color:#dcc4b1">
 				<p>
-					Облицовка стен натуральным камнем
+					 Облицовка стен
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Простая, плиткой толщиной до 20 мм. (мрамор, гранит)
+					 Простая, плиткой толщиной до 20 мм.
 				</p>
 			</td>
 			<td>
 				<p>
-					м2
+					 м2
 				</p>
 			</td>
-			<td>
+			<td colspan="2">
 				<p>
-					2800
+					 2 800
 				</p>
 			</td>
-			<td>
+			<td colspan="2">
 				<p>
-					2800
-				</p>
-			</td>
-			<td>
-				<p>
-					2800
-				</p>
-			</td>
-			<td>
-				<p>
-					2800
+					 2 800
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					По диагонали, плиткой толщиной до 20 мм. (мрамор, гранит)
+					 По диагонали, плиткой толщиной до 20 мм.
 				</p>
 			</td>
 			<td>
 				<p>
-					м2
+					 м2
 				</p>
 			</td>
-			<td>
+			<td colspan="2">
 				<p>
-					3000
+					 3 000
 				</p>
 			</td>
-			<td>
+			<td colspan="2">
 				<p>
-					3000
-				</p>
-			</td>
-			<td>
-				<p>
-					3000
-				</p>
-			</td>
-			<td>
-				<p>
-					3000
+					 3 000
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					С рисунком, плиткой толщиной до 20 мм
+					 С рисунком, плиткой толщиной до 20 мм
 				</p>
 			</td>
 			<td>
 				<p>
-					м2
+					 м2
 				</p>
 			</td>
-			<td>
+			<td colspan="2">
 				<p>
-					3600
+					 3 600
 				</p>
 			</td>
-			<td>
+			<td colspan="2">
 				<p>
-					3600
-				</p>
-			</td>
-			<td>
-				<p>
-					3600
-				</p>
-			</td>
-			<td>
-				<p>
-					3600
+					 3 600
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Крупногабаритными плитами
+					 Крупногабаритными плитами
 				</p>
 			</td>
 			<td>
 				<p>
-					м2
+					 м2
 				</p>
 			</td>
 			<td colspan="4">
 				<p>
-					5000
+					 5 000
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="6" style="text-align:center; background-color:#dcc4b1">
 				<p>
-					Облицовка ступеней натуральным камнем
+					 Облицовка ступеней
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Прямых ступеней и подступней
+					 Прямых ступеней и подступней
 				</p>
 			</td>
 			<td>
 				<p>
-					п/м
+					 п/м
 				</p>
 			</td>
-			<td>
+			<td colspan="2">
 				<p>
-					2800
+					 2 800
 				</p>
 			</td>
-			<td>
+			<td colspan="2">
 				<p>
-					2800
-				</p>
-			</td>
-			<td>
-				<p>
-					2800
-				</p>
-			</td>
-			<td>
-				<p>
-					2800
+					 2 800
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Радиальных ступеней и подступней
+					 Радиальных ступеней и подступней
 				</p>
 			</td>
 			<td>
 				<p>
-					п/м
+					 п/м
 				</p>
 			</td>
-			<td>
+			<td colspan="2">
 				<p>
-					3300
+					 3 300
 				</p>
 			</td>
-			<td>
+			<td colspan="2">
 				<p>
-					3300
-				</p>
-			</td>
-			<td>
-				<p>
-					3300
-				</p>
-			</td>
-			<td>
-				<p>
-					3300
+					 3 300
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Калошница прямая
+					 Калошница прямая
 				</p>
 			</td>
 			<td>
 				<p>
-					п/м
+					 п/м
 				</p>
 			</td>
 			<td colspan="4">
 				<p>
-					1200
+					 1 200
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Калошница косынка
+					 Калошница косынка
 				</p>
 			</td>
 			<td>
 				<p>
-					п/м
+					 п/м
 				</p>
 			</td>
 			<td colspan="4">
 				<p>
-					1500
+					 1 500
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="6" style="text-align:center; background-color:#dcc4b1">
 				<p>
-					Цены на облицовку цоколя натуральным камнем
+					 Облицовка цоколя
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Плитами толщиной до 20 мм
+					 Плитами толщиной до 20 мм
 				</p>
 			</td>
 			<td>
 				<p>
-					м2
+					 м2
 				</p>
 			</td>
-			<td>
+			<td colspan="2">
 				<p>
-					2800
+					 2 800
 				</p>
 			</td>
-			<td>
+			<td colspan="2">
 				<p>
-					2800
-				</p>
-			</td>
-			<td>
-				<p>
-					2800
-				</p>
-			</td>
-			<td>
-				<p>
-					2800
+					 2 800
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Плитами толщиной от 30 мм
+					 Плитами толщиной от 30 мм
 				</p>
 			</td>
 			<td>
 				<p>
-					м2
+					 м2
 				</p>
 			</td>
-			<td>
+			<td colspan="2">
 				<p>
-					3200
+					 3 200
 				</p>
 			</td>
-			<td>
+			<td colspan="2">
 				<p>
-					3200
-				</p>
-			</td>
-			<td>
-				<p>
-					3200
-				</p>
-			</td>
-			<td>
-				<p>
-					3200
+					 3 200
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Плитами крупногабаритными
+					 Плитами крупногабаритными
 				</p>
 			</td>
 			<td>
 				<p>
-					м2
+					 м2
 				</p>
 			</td>
 			<td colspan="4">
 				<p>
-					4500
+					 4 500
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Колонн
+					 Колонн
 				</p>
 			</td>
 			<td>
 				<p>
-					п/м
+					 п/м
 				</p>
 			</td>
 			<td colspan="4">
 				<p>
-					1800
+					 1 800
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Порталов
+					 Порталов
 				</p>
 			</td>
 			<td>
 				<p>
-					п/м
+					 п/м
 				</p>
 			</td>
 			<td colspan="4">
 				<p>
-					1800
+					 1 800
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="6" style="text-align:center; background-color:#dcc4b1">
 				<p>
-					Монтаж изделий из натурального камня
+					 Монтаж изделий из природного камня
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Столешницы шириной до 600 мм
+					 Столешницы шириной до 600 мм
 				</p>
 			</td>
 			<td>
 				<p>
-					п/м
+					 п/м
 				</p>
 			</td>
 			<td colspan="4">
 				<p>
-					от 3850
+					 от 3 850
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Плинтус
+					 Плинтус
 				</p>
 			</td>
 			<td>
 				<p>
-					п/м
+					 п/м
 				</p>
 			</td>
 			<td colspan="4">
 				<p>
-					1500
+					 1 500
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Подоконники шириной до 400 мм и длиной до 2000 мм
+					 Подоконники шириной до 400 мм и длиной до 2000 мм
 				</p>
 			</td>
 			<td>
 				<p>
-					п/м
+					 п/м
 				</p>
 			</td>
 			<td colspan="4">
 				<p>
-					2300
+					 2 300
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Эркерные подоконники
+					 Эркерные подоконники
 				</p>
 			</td>
 			<td>
 				<p>
-					п/м
+					 п/м
 				</p>
 			</td>
 			<td colspan="4">
 				<p>
-					3200
+					 3 200
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Вырубка откосов
+					 Вырубка откосов
 				</p>
 			</td>
 			<td>
 				<p>
-					шт.
+					 шт.
 				</p>
 			</td>
 			<td colspan="4">
 				<p>
-					Входит в стоимость
+					 Входит в стоимость изделия
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Укладка крышки шириной до 400 мм
+					 Укладка крышки шириной до 400 мм
 				</p>
 			</td>
 			<td>
 				<p>
-					п/м
+					 п/м
 				</p>
 			</td>
 			<td colspan="4">
 				<p>
-					2300
+					 2 300
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Укладка крышки шириной от 400 мм
+					 Укладка крышки шириной от 400 мм
 				</p>
 			</td>
 			<td>
 				<p>
-					п/м
+					 п/м
 				</p>
 			</td>
 			<td colspan="4">
 				<p>
-					2500
+					 2 500
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="6" style="text-align:center; background-color:#dcc4b1">
 				<p>
-					Услуги
+					 Услуги
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Выезд на замер
+					 Выезд на замер
 				</p>
 			</td>
 			<td>
 				<p>
-					замер М/М.О
+					 замер М/М.О
 				</p>
 			</td>
 			<td colspan="4">
 				<p>
-					от 1500 руб., при заказе засчитывается
+					 от 1 500, при заказе засчитывается
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Изготовление шаблонов
+					 Изготовление шаблонов
 				</p>
 			</td>
 			<td>
 				<p>
-					шт.
+					 шт.
 				</p>
 			</td>
 			<td colspan="4">
 				<p>
-					500
+					 500
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Демонтаж с максимальным сохранением
+					 Демонтаж с максимальным сохранением
 				</p>
 			</td>
 			<td>
 				<p>
-					м2
+					 м2
 				</p>
 			</td>
 			<td colspan="4">
 				<p>
-					50% от монтажа
+					 50% от монтажа
 				</p>
 			</td>
 		</tr>
@@ -783,39 +710,37 @@ $APPLICATION->SetTitle("Прайс-лист");
 		</table>
 	</div>
 </div>
-<h2>
-	Стоимость работ по мрамору и граниту
-</h2>
+<h2>Резка и обработка природного камня</h2>
 <div class="table-price">
 	<div class="table-price__container">
 		<table class="table-price__table">
 		<thead>
 		<tr>
-			<td rowspan="2" colspan="2">
+			<td rowspan="2" colspan="2" width="45%">
 				<p>
-					<strong>Наименование работ</strong>
+ <strong>Наименование работ</strong>
 				</p>
 			</td>
 			<td rowspan="2">
 				<p>
-					<strong>Единица измерения</strong>
+ <strong>Единица измерения</strong>
 				</p>
 			</td>
 			<td colspan="2">
 				<p>
-					<strong>Стоимость работ (руб.)</strong>
+ <strong>Стоимость работ (руб.)</strong>
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					<strong>Мрамор</strong>
+ <strong>Мрамор</strong>
 				</p>
 			</td>
 			<td>
 				<p>
-					<strong>Гранит</strong>
+ <strong>Гранит</strong>
 				</p>
 			</td>
 		</tr>
@@ -824,478 +749,473 @@ $APPLICATION->SetTitle("Прайс-лист");
 		<tr>
 			<td colspan="5" style="text-align:center; background-color:#dcc4b1">
 				<p>
-					Раскрой камня
+					 Раскрой камня
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
-					прямолинейный рез (мрамор, гранит)
+					 Прямолинейный рез
 				</p>
 			</td>
 			<td>
 				<p>
-					пог.метр
+					 пог. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					330
+					 330
 				</p>
 			</td>
 			<td>
 				<p>
-					360
+					 360
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
-					криволинейный рез (мрамор, гранит)
+					 Криволинейный рез
 				</p>
 			</td>
 			<td>
 				<p>
-					пог.метр
+					 пог. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					640
+					 640
 				</p>
 			</td>
 			<td>
 				<p>
-					740
+					 740
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
-					резка изделия под 45° (мрамор, гранит)
+					 Резка изделия под 45°
 				</p>
 			</td>
 			<td>
 				<p>
-					пог.метр
+					 пог. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					640
+					 640
 				</p>
 			</td>
 			<td>
 				<p>
-					640
+					 640
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
-					прямолинейный рез (мраморная композиционная плита)
+					 Прямолинейный рез
 				</p>
 			</td>
 			<td>
 				<p>
-					пог.метр
+					 пог. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					250
+					 250
 				</p>
 			</td>
 			<td>
 				<p>
-					330
+					 330
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
-					криволинейный рез (мраморная композиционная плита)
+					 Криволинейный рез
 				</p>
 			</td>
 			<td>
 				<p>
-					пог.метр
+					 пог. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					650
+					 650
 				</p>
 			</td>
 			<td>
 				<p>
-					720
+					 720
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
-					резка изделия под 45° (мраморная композиционная плита)
+					 Резка изделия под 45°
 				</p>
 			</td>
 			<td>
 				<p>
-					пог.метр
+					 пог. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					450
+					 450
 				</p>
 			</td>
 			<td>
 				<p>
-					450
+					 450
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="5" style="text-align:center; background-color:#dcc4b1">
 				<p>
-					Обработка натурального камня
+					 Обработка натурального камня
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
-					полировка торца с технологической фаской 45° шириной 2 мм
+					 Полировка торца с технологической фаской 45° шириной 2 мм
 				</p>
 			</td>
 			<td>
 				<p>
-					пог.метр
+					 пог. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					1000
+					 1 000
 				</p>
 			</td>
 			<td>
 				<p>
-					1000
+					 1 000
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
-					полировка торца с технологической фаской 45° шириной от 3-5 мм
+					 Полировка торца с технологической фаской 45° шириной от 3-5 мм
 				</p>
 			</td>
 			<td>
 				<p>
-					пог.метр
+					 пог. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					1200
+					 1 200
 				</p>
 			</td>
 			<td>
 				<p>
-					1500
+					 1 500
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
-					фрезерование канелюров
+					 Фрезерование канелюров
 				</p>
 			</td>
 			<td>
 				<p>
-					пог.метр
+					 пог. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					200
+					 200
 				</p>
 			</td>
 			<td>
 				<p>
-					2500
+					 2 500
 				</p>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2">
+				<p>
+					 Состаривание поверхности камня
+				</p>
+			</td>
+			<td>
+				<p>
+					 кислота
+				</p>
+			</td>
+			<td>
+				<p>
+					 кв. метр
+				</p>
+			</td>
+			<td>
+				<p>
+					 1 500
+				</p>
+			</td>
+			<td>
+				 &nbsp;
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					состaривание поверхности камня
+					 алмазные щетки
 				</p>
 			</td>
 			<td>
 				<p>
-					кислота
+					 кв. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					кв.метр
+					 2 500
 				</p>
 			</td>
 			<td>
-				<p>
-					1500
-				</p>
-			</td>
-			<td>
-				&nbsp;
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<p>
-					состaривание поверхности камня
-				</p>
-			</td>
-			<td>
-				<p>
-					алмазные щетки
-				</p>
-			</td>
-			<td>
-				<p>
-					кв.метр
-				</p>
-			</td>
-			<td>
-				<p>
-					2500
-				</p>
-			</td>
-			<td>
-				&nbsp;
+				 &nbsp;
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
-					нанесение антискользящей полосы шириной 55-130 м
+					 Нанесение антискользящей полосы шириной 55-130 м
 				</p>
 			</td>
 			<td>
 				<p>
-					пог.метр
+					 пог. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					от 500
+					 от 500
 				</p>
 			</td>
 			<td>
 				<p>
-					от 800
+					 от 800
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
-					внутренний вырез с обработкой торца
+					 Внутренний вырез с обработкой торца
 				</p>
 			</td>
 			<td>
 				<p>
-					шт.
+					 шт.
 				</p>
 			</td>
 			<td>
 				<p>
-					4000
+					 4 000
 				</p>
 			</td>
 			<td>
 				<p>
-					4000
+					 4 000
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
-					внутренний вырез без обработки
+					 Внутренний вырез без обработки
 				</p>
 			</td>
 			<td>
 				<p>
-					шт.
+					 шт.
 				</p>
 			</td>
 			<td>
 				<p>
-					2500
+					 2 500
 				</p>
 			</td>
 			<td>
 				<p>
-					2500
+					 2 500
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
-					вырез отверстия диаметром от 30- 60 мм
+					 Вырез отверстия диаметром от 30-60 мм
 				</p>
 			</td>
 			<td>
 				<p>
-					шт.
+					 шт.
 				</p>
 			</td>
 			<td>
 				<p>
-					600
+					 600
 				</p>
 			</td>
 			<td>
 				<p>
-					800
+					 800
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
-					армирование
+					 Армирование
 				</p>
 			</td>
 			<td>
 				<p>
-					пог.метр
+					 пог. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					800
+					 800
 				</p>
 			</td>
 			<td>
 				<p>
-					800,00
+					 800
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
-					подклейка декоративных элементов
+					 Подклейка декоративных элементов
 				</p>
 			</td>
 			<td>
 				<p>
-					пог.метр
+					 пог. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					750
+					 750
 				</p>
 			</td>
 			<td>
 				<p>
-					750
+					 750
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
-					переполировка
+					 Переполировка
 				</p>
 			</td>
 			<td>
 				<p>
-					кв.метр
+					 кв. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					1500,00
+					 1 500
 				</p>
 			</td>
 			<td>
 				<p>
-					Дог.
+					 Дог.
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
-					изготовление капельника
+					 Изготовление капельника
 				</p>
 			</td>
 			<td>
 				<p>
-					пог.метр
+					 пог. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					400
+					 400
 				</p>
 			</td>
 			<td>
 				<p>
-					400
+					 400
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
-					закругление угла радиусом 10-40 мм
+					 Закругление угла радиусом 10-40 мм
 				</p>
 			</td>
 			<td>
 				<p>
-					шт.
+					 шт.
 				</p>
 			</td>
 			<td>
-				&nbsp;
+				 &nbsp;
 			</td>
 			<td>
-				&nbsp;
+				 &nbsp;
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
-					полировка второй стороны (при изготовлении изделия)
+					 Полировка второй стороны (при изготовлении изделия)
 				</p>
 			</td>
 			<td>
 				<p>
-					кв.метр
+					 кв. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					2500,00
+					 2 500
 				</p>
 			</td>
 			<td>
 				<p>
-					3500,00
+					 3 500
 				</p>
 			</td>
 		</tr>
@@ -1303,32 +1223,37 @@ $APPLICATION->SetTitle("Прайс-лист");
 		</table>
 	</div>
 </div>
-<h2>
-	Цены на обработку мраморных и гранитных профилей
-</h2>
+<h2>Обработка мраморных и гранитных профилей</h2>
 <div class="table-price">
 	<div class="table-price__container">
 		<table class="table-price__table">
 		<thead>
 		<tr>
+			<td rowspan="2">
+				<p>
+ <strong>Профиль</strong>
+				</p>
+			</td>
+			<td rowspan="2">
+				<p>
+ <strong>Единицы измерения</strong>
+				</p>
+			</td>
+			<td colspan="2">
+				<p>
+ <strong>Цена (руб.)</strong>
+				</p>
+			</td>
+		</tr>
+		<tr>
 			<td>
 				<p>
-					<strong>Профиль</strong>
+ <strong>Мрамор</strong>
 				</p>
 			</td>
 			<td>
 				<p>
-					<strong>Единица измерения</strong>
-				</p>
-			</td>
-			<td>
-				<p>
-					<strong>Мрамор</strong>
-				</p>
-			</td>
-			<td>
-				<p>
-					<strong>Гранит</strong>
+ <strong>Гранит</strong>
 				</p>
 			</td>
 		</tr>
@@ -1337,198 +1262,198 @@ $APPLICATION->SetTitle("Прайс-лист");
 		<tr>
 			<td>
 				<p>
-					Профиль А
+					 Профиль А
 				</p>
 			</td>
 			<td>
 				<p>
-					пог.метр
+					 пог. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					1500
+					 1 500
 				</p>
 			</td>
 			<td>
 				<p>
-					1800
-				</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<p>
-					Профиль В
-				</p>
-			</td>
-			<td>
-				<p>
-					пог.метр
-				</p>
-			</td>
-			<td>
-				<p>
-					1500
-				</p>
-			</td>
-			<td>
-				<p>
-					1800
+					 1 800
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Профиль Е
+					 Профиль В
 				</p>
 			</td>
 			<td>
 				<p>
-					пог.метр
+					 пог. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					1500
+					 1 500
 				</p>
 			</td>
 			<td>
 				<p>
-					1800
-				</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<p>
-					Профиль F
-				</p>
-			</td>
-			<td>
-				<p>
-					пог.метр
-				</p>
-			</td>
-			<td>
-				<p>
-					2600
-				</p>
-			</td>
-			<td>
-				<p>
-					2800
+					 1 800
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Профиль H
+					 Профиль Е
 				</p>
 			</td>
 			<td>
 				<p>
-					пог.метр
+					 пог. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					2600
+					 1 500
 				</p>
 			</td>
 			<td>
 				<p>
-					2800
-				</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<p>
-					Профиль L
-				</p>
-			</td>
-			<td>
-				<p>
-					пог.метр
-				</p>
-			</td>
-			<td>
-				<p>
-					2600
-				</p>
-			</td>
-			<td>
-				<p>
-					2800
+					 1 800
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Профиль O
+					 Профиль F
 				</p>
 			</td>
 			<td>
 				<p>
-					пог.метр
+					 пог. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					2800
+					 2 600
 				</p>
 			</td>
 			<td>
 				<p>
-					3000
-				</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<p>
-					Профиль T
-				</p>
-			</td>
-			<td>
-				<p>
-					пог.метр
-				</p>
-			</td>
-			<td>
-				<p>
-					2600,00
-				</p>
-			</td>
-			<td>
-				<p>
-					2800,00
+					 2 800
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>
-					Профиль V
+					 Профиль H
 				</p>
 			</td>
 			<td>
 				<p>
-					пог.метр
+					 пог. метр
 				</p>
 			</td>
 			<td>
 				<p>
-					1500
+					 2 600
 				</p>
 			</td>
 			<td>
 				<p>
-					1800
+					 2 800
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>
+					 Профиль L
+				</p>
+			</td>
+			<td>
+				<p>
+					 пог. метр
+				</p>
+			</td>
+			<td>
+				<p>
+					 2 600
+				</p>
+			</td>
+			<td>
+				<p>
+					 2 800
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>
+					 Профиль O
+				</p>
+			</td>
+			<td>
+				<p>
+					 пог. метр
+				</p>
+			</td>
+			<td>
+				<p>
+					 2 800
+				</p>
+			</td>
+			<td>
+				<p>
+					 3 000
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>
+					 Профиль T
+				</p>
+			</td>
+			<td>
+				<p>
+					 пог. метр
+				</p>
+			</td>
+			<td>
+				<p>
+					 2 600
+				</p>
+			</td>
+			<td>
+				<p>
+					 2 800
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>
+					 Профиль V
+				</p>
+			</td>
+			<td>
+				<p>
+					 пог. метр
+				</p>
+			</td>
+			<td>
+				<p>
+					 1 500
+				</p>
+			</td>
+			<td>
+				<p>
+					 1 800
 				</p>
 			</td>
 		</tr>
@@ -1536,4 +1461,122 @@ $APPLICATION->SetTitle("Прайс-лист");
 		</table>
 	</div>
 </div>
-<br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+ <br>
+<div class="profiles-list">
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа 1" src="/upload/medialibrary/1a4/1.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа 2" src="/upload/medialibrary/480/2.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа 3" src="/upload/medialibrary/44a/3.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа 4" src="/upload/medialibrary/348/4.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа 5" src="/upload/medialibrary/3fb/5.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа 6" src="/upload/medialibrary/e2f/6.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа 7" src="/upload/medialibrary/59e/7.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа 8" src="/upload/medialibrary/286/8.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа A" src="/upload/medialibrary/582/a.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа B" src="/upload/medialibrary/fa6/b.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа C" src="/upload/medialibrary/b39/c.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа D" src="/upload/medialibrary/40b/d.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа E" src="/upload/medialibrary/316/e.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа F" src="/upload/medialibrary/0a3/f.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа G" src="/upload/medialibrary/d4b/g.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа K" src="/upload/medialibrary/970/k.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа L" src="/upload/medialibrary/95f/l.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа M" src="/upload/medialibrary/32c/m.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа N" src="/upload/medialibrary/d38/n.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа O" src="/upload/medialibrary/459/o.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа P" src="/upload/medialibrary/9f4/p.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа R" src="/upload/medialibrary/e87/r.jpeg">
+		</div>
+	</div>
+	<div class="profiles-list__item">
+		<div class="profiles-list__item-inner">
+ <img alt="Профиль типа Z" src="/upload/medialibrary/06b/z.jpeg">
+		</div>
+	</div>
+</div>
+ <br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

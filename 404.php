@@ -5,11 +5,10 @@ CHTTP::SetStatus("404 Not Found");
 @define("ERROR_404","Y");
 $APPLICATION->SetTitle("Потерялись?");
 $APPLICATION->AddChainItem("404");
-?>
-    <div class="content-block">
+?>    <div class="content-block">
         <div class="content">
             <div class="h3 aleft">Страница не найдена или такой страницы больше нет</div>
-            <p>К сожалению, такой странице не существует.</p>
+            <p>К сожалению, такой страницы не существует.</p>
             <p>Предлагаем перейти на <a href="/">главную страницу</a></p>
         </div>
     </div>
