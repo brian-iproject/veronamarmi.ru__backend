@@ -1,4 +1,14 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<? ob_start(); ?>
+	<? if (!$APPLICATION->GetProperty("hide-heading") && $APPLICATION->GetProperty("hide-heading") != "Y") { ?>
+		<h1><?=$APPLICATION->GetTitle(false)?></h1>
+	<? } ?>
+<?
+// Формируем h1
+$contentHeading = ob_get_contents();
+ob_end_clean();
+$APPLICATION->AddViewContent("contentHeading", $contentHeading);
+?>
 		</main>
 		<? if ($APPLICATION->GetProperty("show-aside") && $APPLICATION->GetProperty("show-aside") != "N") { ?>
 			<? ob_start(); ?> page-content--two-column<?

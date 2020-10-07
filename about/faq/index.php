@@ -3,7 +3,17 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetPageProperty("title", "Вопрос-ответ (FAQ) по обработке натуральным камнем");
 $APPLICATION->SetPageProperty("description", "Вопросы и ответы про натуральный камень");
 $APPLICATION->SetTitle("Вопрос-ответ");
-?><?$APPLICATION->IncludeComponent(
+?>
+<?
+$GLOBALS["arrFilterFaq"] = array(
+    array(
+        "LOGIC" => "OR",
+        array("PROPERTY_PAGES" => $APPLICATION->GetCurPage()),
+        array("PROPERTY_PAGES" => "all"),
+        array("PROPERTY_PAGES" => false),
+    ),
+);
+$APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
 	"faq", 
 	array(
@@ -31,7 +41,7 @@ $APPLICATION->SetTitle("Вопрос-ответ");
 			1 => "",
 		),
 		"FILE_404" => "",
-		"FILTER_NAME" => "",
+		"FILTER_NAME" => "arrFilterFaq",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => "10",
 		"IBLOCK_TYPE" => "content",
@@ -68,4 +78,5 @@ $APPLICATION->SetTitle("Вопрос-ответ");
 		"COMPONENT_TEMPLATE" => "faq"
 	),
 	false
-);?><br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

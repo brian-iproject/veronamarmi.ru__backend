@@ -156,7 +156,10 @@
 						<input type="hidden" name="<?=$forpt?>" value="<?=$fotptval?>">
 					<? } ?>
 					<div class="site-form__item site-form__item--privacy-policy">
-						<input type="checkbox" required checked> Согласен с обработкой моих персональных данных<br>в соответствии с <a href="/privacy-policy/" target="_blank">политикой конфиденциальности</a>
+						<input type="checkbox" required checked class="site-form__field-checkbox">
+						<p>Согласен с обработкой моих
+							персональных данных<br>в соответствии с <a href="/privacy-policy/" target="_blank">политикой
+								конфиденциальности</a></p>
 					</div>
 			    <div class="site-form__item  site-form__item--button">
 			        <input type="hidden" name="<?=$arResult["SEND_BUTTON_NAME"]?>" value="Y">

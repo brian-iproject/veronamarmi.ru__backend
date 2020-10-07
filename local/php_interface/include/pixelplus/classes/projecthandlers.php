@@ -254,6 +254,44 @@ class CProjectHandlers
             ob_end_clean();
             $buffer = str_replace('#CALCULATOR_STOL#', $content, $buffer);
         }
+
+        if (preg_match('/#PRICE_BLOCK#/', $buffer) && !$USER->IsAdmin()) {
+            ob_start();
+            $APPLICATION->IncludeComponent(
+                "bitrix:main.include",
+                ".default",
+                array(
+                    "AREA_FILE_SHOW" => "file",
+                    "AREA_FILE_SUFFIX" => "inc",
+                    "EDIT_TEMPLATE" => "",
+                    "PATH" => "/includes-area/price-block.php",
+                    "COMPONENT_TEMPLATE" => ".default"
+                ),
+                false
+            );
+            $content = ob_get_contents();
+            ob_end_clean();
+            $buffer = str_replace('#PRICE_BLOCK#', $content, $buffer);
+        }
+
+        if (preg_match('/#CALL2ACTION#/', $buffer) && !$USER->IsAdmin()) {
+            ob_start();
+            $APPLICATION->IncludeComponent(
+                "bitrix:main.include",
+                ".default",
+                array(
+                    "AREA_FILE_SHOW" => "file",
+                    "AREA_FILE_SUFFIX" => "inc",
+                    "EDIT_TEMPLATE" => "",
+                    "PATH" => "/includes-area/consultation.php",
+                    "COMPONENT_TEMPLATE" => ".default"
+                ),
+                false
+            );
+            $content = ob_get_contents();
+            ob_end_clean();
+            $buffer = str_replace('#CALL2ACTION#', $content, $buffer);
+        }
     }
 
     function sanitize_output($buffer)

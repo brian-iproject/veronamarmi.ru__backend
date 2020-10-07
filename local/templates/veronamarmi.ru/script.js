@@ -79,8 +79,14 @@ $(function(){
     }
 });
 
-
+setRootProperties();
+window.addEventListener('resize', setRootProperties);
 
 function pxScrollTop() {
     ($(window).scrollTop() > 300) ? $(".scrollTop").fadeIn(600) : $(".scrollTop").hide();
+}
+
+function setRootProperties() {
+    let root = document.documentElement;
+    root.style.setProperty('--screen-width', document.querySelector('body').clientWidth + 'px');
 }

@@ -24,6 +24,9 @@
 
   Asset::getInstance()->addString('<link rel="shortcut icon" href="'.SITE_TEMPLATE_PATH.'/favicon.ico" type="image/x-icon">');
   Asset::getInstance()->addString('<link rel="icon" href="'.SITE_TEMPLATE_PATH.'/favicon.ico" type="image/x-icon">');
+
+  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/blocks/consultation/style.css');
+  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/blocks/consultation-form/style.css');
   ?>
 </head>
 <body>
@@ -248,5 +251,5 @@
 	),
 	false
 );?>
-				<h1><?=$APPLICATION->ShowTitle(false)?></h1>
+        <?=$APPLICATION->ShowViewContent("contentHeading")?>
 			<? } ?>

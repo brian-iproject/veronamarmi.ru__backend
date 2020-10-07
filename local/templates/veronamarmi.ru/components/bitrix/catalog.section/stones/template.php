@@ -63,5 +63,5 @@ $this->setFrameMode(true);
 	<? } ?>
 </div>
 <? if($arParams["DISPLAY_BOTTOM_PAGER"]) { ?>
-    <?=$arResult["NAV_STRING"]?>
+      <?=$arResult["NAV_STRING"]?>
 <? } ?>

@@ -1,0 +1,48 @@
+.consultation {
+	background-color: #AB8668;
+	margin: 30px 0;
+}
+
+	.consultation__inner {
+		color: #fff;
+	}
+	
+		.consultation__text {
+			padding: 40px 15px;
+		}
+
+			.consultation__phone {
+				font: normal 32px 'Noto Serif', sans-serif;
+			}
+		
+		.consultation__images {
+			display: none;
+			mix-blend-mode: hard-light;
+			
+		}
+
+@media (min-width: 768px) {
+	.consultation {
+		background-image: radial-gradient(26.52% 93.81% at 64.53% 46.54%, #F6D4B8 0%, #AB8668 100%);
+	}
+	
+		.consultation__inner {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+			.consultation__text {
+				flex: 0 0 auto;
+				max-width: 480px;
+			}
+			
+			
+	
+			.consultation__images {
+				display: block;
+				flex: 0 0 auto;
+				max-width: 480px;
+				padding: 0 15px;
+			}
+}

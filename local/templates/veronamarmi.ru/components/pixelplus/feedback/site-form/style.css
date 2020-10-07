@@ -38,6 +38,21 @@
 				font-size: 12px;
 			}
 			
+				.site-form__item--privacy-policy {
+					display: flex;
+					align-items: center;
+				}
+				
+					.site-form__item--privacy-policy input {
+						flex-grow: 0;
+						flex-shrink: 0;
+					}
+				
+					.site-form__item--privacy-policy p {
+						margin: 0;
+						line-height: 1.2;
+					}
+			
 				.site-form__star-required {
 					color: #ff0000;
 				}
@@ -79,6 +94,41 @@
 			.site-form__field-textarea {
 				min-height: 150px;
 			}
+			
+			.site-form__field-checkbox {
+				-webkit-appearance: none;
+				background: none;
+				border: none;
+				cursor: pointer;
+				height: 22px;
+				margin-right: 8px;
+				outline: none;
+				position: relative;
+				vertical-align: middle;
+				width: 22px;
+			}
+
+				.site-form__field-checkbox:before {
+					background: #fff;
+					border: 1px solid #fff;
+					content: '';
+					height: 100%;
+					left: 0;
+					position: absolute;
+					top: 0;
+					width: 100%;
+				}
+
+				.site-form__field-checkbox:checked:after {
+					border-bottom: 2px solid #64452c;
+					border-left: 2px solid #64452c;
+					content: "";
+					height: 7px;
+					margin: 5px 0 0 5px;
+					position: absolute;
+					transform: rotate(-45deg);
+					width: 14px;
+				}
 
 @media (min-width: 768px) {
 	.site-form--two-column {
@@ -126,4 +176,17 @@
 					height: 100%;
 					min-height: auto;
 				}
+				
+	.site-form--line .site-form__inner {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -4px;
+	}
+	
+		.site-form--line .site-form__item {
+			flex: 0 0 50%;
+			max-width: 50%;
+			padding: 0 4px;
+			margin-bottom: 30px;
+		}
 }

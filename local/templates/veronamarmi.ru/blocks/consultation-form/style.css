@@ -1,0 +1,59 @@
+.consultation-form {
+	background-color: #AB8668;
+	margin: 30px 0;
+}
+
+	.consultation-form__inner {
+		color: #fff;
+		padding: 40px 15px;
+		margin: 0 -15px;
+	}
+	
+		.consultation-form__inner a {
+			color: #fff;
+			text-decoration-color: #fff;
+		}
+		
+			.consultation-form__inner a:hover,
+			.consultation-form__inner a:active {
+				color: #fff;
+			}
+	
+		.consultation-form__text {
+			padding: 0 15px;
+		}
+
+			.consultation-form__title {
+				font: normal 32px 'Noto Serif', sans-serif;
+				line-height: 1;
+			}
+		
+		.consultation-form__form {
+			margin-top: 30px;
+			padding: 0 15px;
+		}
+
+@media (min-width: 768px) {
+	.consultation-form {
+		background-image: url(images/bg.jpg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+	
+		.consultation-form__inner {
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+		}
+		
+			.consultation-form__text {
+				flex: 0 0 40%;
+				max-width: 40%;
+			}
+			
+			.consultation-form__form {
+				flex: 0 0 60%;
+				max-width: 60%;
+				margin-top: 0;
+			}
+}
